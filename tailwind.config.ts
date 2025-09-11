@@ -62,6 +62,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        'electric-blue': '#0066FF',
+        'neon-purple': '#8A2BE2',
+        'deep-black': '#0A0A0A',
+        'anthracite-gray': '#1A1A1A',
+        'neon-green': '#00FF88',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -89,6 +94,10 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      boxShadow: {
+        'glow-blue': '0 0 15px 0px rgba(0, 102, 255, 0.7)',
+        'glow-purple': '0 0 15px 0px rgba(138, 43, 226, 0.7)',
       },
     },
   },
