@@ -10,11 +10,11 @@ const About = () => {
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div>
-                <p className="text-4xl font-bold text-electric-blue">10+</p>
+                <p className="text-4xl font-bold text-neon-purple">10+</p>
                 <p className="text-gray-400">Años de Experiencia</p>
               </div>
               <div>
-                <p className="text-4xl font-bold text-electric-blue">100+</p>
+                <p className="text-4xl font-bold text-neon-purple">100+</p>
                 <p className="text-gray-400">Proyectos Completados</p>
               </div>
             </div>

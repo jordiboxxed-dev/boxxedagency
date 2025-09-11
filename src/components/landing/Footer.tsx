@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <a href="#" className="text-gray-400 hover:text-electric-blue">
+          <a href="#" className="text-gray-400 hover:text-neon-purple">
             <Linkedin className="h-6 w-6" />
           </a>
           <span className="text-gray-500">contact@boxxed.agency</span>

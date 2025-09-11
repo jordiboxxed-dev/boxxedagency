@@ -39,12 +39,12 @@ const Process = () => {
             <div key={index} className="md:flex items-center mb-8 w-full">
               <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left md:ml-auto'}`}>
                 <div className="bg-anthracite-gray p-6 rounded-lg border border-gray-800">
-                  <h3 className="text-xl font-bold text-electric-blue mb-2">{step.title}</h3>
+                  <h3 className="text-xl font-bold text-neon-purple mb-2">{step.title}</h3>
                   <p className="text-gray-400">{step.description}</p>
                 </div>
               </div>
-              <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-deep-black h-8 w-8 rounded-full border-2 border-electric-blue items-center justify-center">
-                <CheckCircle className="h-4 w-4 text-electric-blue" />
+              <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 bg-deep-black h-8 w-8 rounded-full border-2 border-neon-purple items-center justify-center">
+                <CheckCircle className="h-4 w-4 text-neon-purple" />
               </div>
             </div>
           ))}

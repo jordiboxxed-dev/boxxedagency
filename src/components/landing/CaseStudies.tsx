@@ -41,7 +41,7 @@ const CaseStudies = () => {
                   <Card className="bg-deep-black/30 border-gray-800 overflow-hidden">
                     <img src={study.image} alt={study.title} className="w-full h-48 object-cover" />
                     <CardContent className="p-6">
-                      <Badge variant="secondary" className="mb-2 bg-electric-blue text-white">{study.industry}</Badge>
+                      <Badge variant="secondary" className="mb-2 bg-neon-purple text-white">{study.industry}</Badge>
                       <h3 className="text-lg font-semibold mb-2">{study.title}</h3>
                       <p className="text-neon-green font-bold">{study.results}</p>
                     </CardContent>
@@ -50,8 +50,8 @@ const CaseStudies = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="text-white bg-deep-black/50 border-gray-700 hover:bg-electric-blue" />
-          <CarouselNext className="text-white bg-deep-black/50 border-gray-700 hover:bg-electric-blue" />
+          <CarouselPrevious className="text-white bg-deep-black/50 border-gray-700 hover:bg-neon-purple" />
+          <CarouselNext className="text-white bg-deep-black/50 border-gray-700 hover:bg-neon-purple" />
         </Carousel>
       </div>
     </section>

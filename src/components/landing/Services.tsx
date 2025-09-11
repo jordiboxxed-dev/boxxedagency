@@ -3,22 +3,22 @@ import { BrainCircuit, Bot, Zap, Briefcase } from "lucide-react";
 
 const services = [
   {
-    icon: <BrainCircuit className="h-10 w-10 text-electric-blue" />,
+    icon: <BrainCircuit className="h-10 w-10 text-neon-purple" />,
     title: "Infraestructuras de IA",
     description: "Diseñamos y desplegamos arquitecturas de IA robustas y escalables, personalizadas para tus necesidades.",
   },
   {
-    icon: <Zap className="h-10 w-10 text-electric-blue" />,
+    icon: <Zap className="h-10 w-10 text-neon-purple" />,
     title: "Automatizaciones Inteligentes",
     description: "Optimizamos tus flujos de trabajo con automatizaciones que ahorran tiempo y reducen errores.",
   },
   {
-    icon: <Bot className="h-10 w-10 text-electric-blue" />,
+    icon: <Bot className="h-10 w-10 text-neon-purple" />,
     title: "Agentes y Chatbots de IA",
     description: "Creamos agentes conversacionales avanzados que mejoran la experiencia del cliente y la eficiencia interna.",
   },
   {
-    icon: <Briefcase className="h-10 w-10 text-electric-blue" />,
+    icon: <Briefcase className="h-10 w-10 text-neon-purple" />,
     title: "Consultoría Estratégica",
     description: "Te guiamos en la adopción de la IA, desde la estrategia hasta la implementación y la medición de resultados.",
   },
@@ -38,13 +38,13 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 text-center transition-all duration-300 hover:border-electric-blue hover:scale-105 hover:shadow-glow-blue"
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple"
             >
               <CardHeader className="p-0 mb-4 flex justify-center items-center">
                 {service.icon}
               </CardHeader>
               <CardContent className="p-0">
-                <CardTitle className="text-xl font-semibold mb-2">{service.title}</CardTitle>
+                <CardTitle className="text-xl font-semibold mb-2 text-white">{service.title}</CardTitle>
                 <p className="text-gray-400 text-sm">{service.description}</p>
               </CardContent>
             </Card>

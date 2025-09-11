@@ -48,7 +48,7 @@ const CTASection = () => {
                   <FormItem>
                     <FormLabel>Nombre</FormLabel>
                     <FormControl>
-                      <Input placeholder="Tu nombre" {...field} className="bg-anthracite-gray border-gray-700 focus:border-electric-blue focus:ring-electric-blue" />
+                      <Input placeholder="Tu nombre" {...field} className="bg-anthracite-gray border-gray-700 focus:border-neon-purple focus:ring-neon-purple" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -61,7 +61,7 @@ const CTASection = () => {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input type="email" placeholder="tu@email.com" {...field} className="bg-anthracite-gray border-gray-700 focus:border-electric-blue focus:ring-electric-blue" />
+                      <Input type="email" placeholder="tu@email.com" {...field} className="bg-anthracite-gray border-gray-700 focus:border-neon-purple focus:ring-neon-purple" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -74,13 +74,13 @@ const CTASection = () => {
                   <FormItem>
                     <FormLabel>Mensaje</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Cuéntanos sobre tu proyecto..." {...field} className="bg-anthracite-gray border-gray-700 focus:border-electric-blue focus:ring-electric-blue" />
+                      <Textarea placeholder="Cuéntanos sobre tu proyecto..." {...field} className="bg-anthracite-gray border-gray-700 focus:border-neon-purple focus:ring-neon-purple" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full bg-electric-blue hover:bg-neon-purple text-white font-bold transition-all duration-300 hover:shadow-glow-blue text-lg py-6">
+              <Button type="submit" className="w-full bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple text-lg py-6">
                 Solicitar Auditoría Gratuita
               </Button>
             </form>
