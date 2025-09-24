@@ -40,6 +40,18 @@ export default function RadialOrbitalTimeline({
   const containerRef = useRef<HTMLDivElement>(null);
   const orbitRef = useRef<HTMLDivElement>(null);
   const nodeRefs = useRef<Record<number, HTMLDivElement | null>>({});
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [spotlightOpacity, setSpotlightOpacity] = useState(0);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setMousePosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+    setSpotlightOpacity(1);
+  };
+
+  const handleMouseLeave = () => {
+    setSpotlightOpacity(0);
+  };
 
   const handleContainerClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === containerRef.current || e.target === orbitRef.current) {
@@ -252,9 +264,20 @@ export default function RadialOrbitalTimeline({
                 </div>
 
                 {isExpanded && (
-                  <div className="group absolute top-36 left-1/2 -translate-x-1/2 w-80">
-                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-px h-8 bg-white/50 transition-colors duration-300 group-hover:bg-neon-purple"></div>
-                    <Card className="w-full bg-black/90 backdrop-blur-lg border-white/30 shadow-xl shadow-white/10 overflow-visible transition-all duration-300 group-hover:border-neon-purple group-hover:shadow-glow-purple">
+                  <div className="absolute top-36 left-1/2 -translate-x-1/2 w-80">
+                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-px h-8 bg-white/50"></div>
+                    <Card
+                      onMouseMove={handleMouseMove}
+                      onMouseLeave={handleMouseLeave}
+                      className="w-full bg-black/90 backdrop-blur-lg border-white/30 shadow-xl shadow-white/10 overflow-hidden relative transition-all duration-300"
+                    >
+                      <div
+                        className="pointer-events-none absolute -inset-px rounded-lg transition-opacity duration-300"
+                        style={{
+                          opacity: spotlightOpacity,
+                          background: `radial-gradient(300px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(138, 43, 226, 0.15), transparent 80%)`,
+                        }}
+                      />
                       <CardHeader className="pb-2">
                         <div className="flex justify-between items-center">
                           <Badge
@@ -285,7 +308,7 @@ export default function RadialOrbitalTimeline({
                           </div>
                           <div className="w-full h-1 bg-white/10 rounded-full overflow-hidden">
                             <div
-                              className="h-full bg-gradient-to-r from-electric-blue to-neon-purple"
+                              className="h-full bg-gradient-to-r from-neon-purple to-purple-400"
                               style={{ width: `${item.progress}%` }}
                             ></div>
                           </div>
