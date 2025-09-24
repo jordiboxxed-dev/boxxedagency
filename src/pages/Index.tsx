@@ -5,7 +5,6 @@ import Services from "@/components/landing/Services";
 import FeaturedCaseStudy from "@/components/landing/FeaturedCaseStudy";
 import CaseStudies from "@/components/landing/CaseStudies";
 import RecentWork from "@/components/landing/RecentWork";
-import Process from "@/components/landing/Process";
 import OrbitalProcess from "@/components/landing/OrbitalProcess";
 import About from "@/components/landing/About";
 import Pricing from "@/components/landing/Pricing";
@@ -25,7 +24,6 @@ const Index = () => {
         <FeaturedCaseStudy />
         <CaseStudies />
         <RecentWork />
-        <Process />
         <OrbitalProcess />
         <About />
         <Pricing />
