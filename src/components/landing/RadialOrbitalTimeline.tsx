@@ -164,7 +164,6 @@ export default function RadialOrbitalTimeline({
           className="absolute w-full h-full flex items-center justify-center"
           ref={orbitRef}
           style={{
-            perspective: "1000px",
             transform: `translate(${centerOffset.x}px, ${centerOffset.y}px)`,
           }}
         >
