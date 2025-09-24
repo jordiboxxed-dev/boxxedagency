@@ -92,7 +92,7 @@ const OrbitalProcess = () => {
                     Explora las fases de nuestro trabajo. Haz clic en un nodo para ver los detalles.
                 </p>
             </div>
-            <div className="relative w-full h-[600px]">
+            <div className="relative w-full h-[800px]">
                 <RadialOrbitalTimeline timelineData={timelineData} />
             </div>
         </div>

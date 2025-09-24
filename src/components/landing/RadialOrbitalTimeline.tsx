@@ -114,7 +114,7 @@ export default function RadialOrbitalTimeline({
 
   const calculateNodePosition = (index: number, total: number) => {
     const angle = ((index / total) * 360 + rotationAngle) % 360;
-    const radius = 200;
+    const radius = 300;
     const radian = (angle * Math.PI) / 180;
 
     const x = radius * Math.cos(radian) + centerOffset.x;
@@ -177,7 +177,7 @@ export default function RadialOrbitalTimeline({
             <div className="w-8 h-8 rounded-full bg-white/80 backdrop-blur-md"></div>
           </div>
 
-          <div className="absolute w-96 h-96 rounded-full border border-white/10"></div>
+          <div className="absolute w-[600px] h-[600px] rounded-full border border-white/10"></div>
 
           {timelineData.map((item, index) => {
             const position = calculateNodePosition(index, timelineData.length);
@@ -253,7 +253,7 @@ export default function RadialOrbitalTimeline({
                 </div>
 
                 {isExpanded && (
-                  <Card className="absolute top-20 left-1/2 -translate-x-1/2 w-64 bg-black/90 backdrop-blur-lg border-white/30 shadow-xl shadow-white/10 overflow-visible">
+                  <Card className="absolute top-24 left-1/2 -translate-x-1/2 w-80 bg-black/90 backdrop-blur-lg border-white/30 shadow-xl shadow-white/10 overflow-visible">
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-px h-3 bg-white/50"></div>
                     <CardHeader className="pb-2">
                       <div className="flex justify-between items-center">
@@ -268,17 +268,17 @@ export default function RadialOrbitalTimeline({
                           {item.date}
                         </span>
                       </div>
-                      <CardTitle className="text-sm mt-2">
+                      <CardTitle className="text-base mt-2">
                         {item.cardTitle}
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="text-xs text-white/80">
+                    <CardContent className="text-sm text-white/80">
                       <p>{item.content}</p>
 
                       <div className="mt-4 pt-3 border-t border-white/10">
-                        <div className="flex justify-between items-center text-xs mb-1">
+                        <div className="flex justify-between items-center text-sm mb-1">
                           <span className="flex items-center">
-                            <TrendingUp size={10} className="mr-1" />
+                            <TrendingUp size={12} className="mr-1" />
                             Progreso del Proyecto
                           </span>
                           <span className="font-mono">{item.progress}%</span>
@@ -294,12 +294,12 @@ export default function RadialOrbitalTimeline({
                       {item.deliverable && (
                         <div className="mt-4 pt-3 border-t border-white/10">
                           <div className="flex items-center mb-2">
-                            <Package size={10} className="text-white/70 mr-1" />
-                            <h4 className="text-xs uppercase tracking-wider font-medium text-white/70">
-                              Entregable Clave
+                            <Package size={12} className="text-white/70 mr-1" />
+                            <h4 className="text-sm uppercase tracking-wider font-medium text-white/70">
+                              Resultado Clave
                             </h4>
                           </div>
-                          <p className="text-xs text-white/90 font-medium">{item.deliverable}</p>
+                          <p className="text-sm text-white/90 font-medium">{item.deliverable}</p>
                         </div>
                       )}
                     </CardContent>
