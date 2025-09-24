@@ -6,17 +6,17 @@ import { ArrowRight, TrendingUp, Users, Zap } from "lucide-react";
 const FeaturedCaseStudy = () => {
   const stats = [
     {
-      icon: <TrendingUp className="h-8 w-8 text-neon-green" />,
+      icon: <TrendingUp className="h-8 w-8 text-neon-purple" />,
       value: "+340%",
       label: "Crecimiento en ventas",
     },
     {
-      icon: <Users className="h-8 w-8 text-neon-green" />,
+      icon: <Users className="h-8 w-8 text-neon-purple" />,
       value: "+280%",
       label: "Nuevos leads mensuales",
     },
     {
-      icon: <Zap className="h-8 w-8 text-neon-green" />,
+      icon: <Zap className="h-8 w-8 text-neon-purple" />,
       value: "15hs/sem",
       label: "Tiempo ahorrado",
     },
@@ -29,7 +29,7 @@ const FeaturedCaseStudy = () => {
           {/* Columna de texto y estadísticas */}
           <div className="flex flex-col h-full">
             <div>
-              <Badge variant="secondary" className="bg-neon-purple/20 text-neon-purple border border-neon-purple/30 w-fit">
+              <Badge variant="secondary" className="bg-neon-purple/20 text-neon-purple border border-neon-purple/30 w-fit hover:bg-neon-purple/20">
                 Caso de Estudio
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
