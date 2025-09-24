@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { ArrowRight, Link, Zap } from "lucide-react";
+import { ArrowRight, Link, TrendingUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -15,7 +15,7 @@ interface TimelineItem {
   icon: React.ElementType;
   relatedIds: number[];
   status: "completed" | "in-progress" | "pending";
-  energy: number;
+  progress: number;
 }
 
 interface RadialOrbitalTimelineProps {
@@ -208,10 +208,10 @@ export default function RadialOrbitalTimeline({
                   }`}
                   style={{
                     background: `radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%)`,
-                    width: `${item.energy * 0.5 + 40}px`,
-                    height: `${item.energy * 0.5 + 40}px`,
-                    left: `-${(item.energy * 0.5 + 40 - 40) / 2}px`,
-                    top: `-${(item.energy * 0.5 + 40 - 40) / 2}px`,
+                    width: `${item.progress * 0.5 + 40}px`,
+                    height: `${item.progress * 0.5 + 40}px`,
+                    left: `-${(item.progress * 0.5 + 40 - 40) / 2}px`,
+                    top: `-${(item.progress * 0.5 + 40 - 40) / 2}px`,
                   }}
                 ></div>
 
@@ -277,15 +277,15 @@ export default function RadialOrbitalTimeline({
                       <div className="mt-4 pt-3 border-t border-white/10">
                         <div className="flex justify-between items-center text-xs mb-1">
                           <span className="flex items-center">
-                            <Zap size={10} className="mr-1" />
-                            Nivel de Energía
+                            <TrendingUp size={10} className="mr-1" />
+                            Progreso del Proyecto
                           </span>
-                          <span className="font-mono">{item.energy}%</span>
+                          <span className="font-mono">{item.progress}%</span>
                         </div>
                         <div className="w-full h-1 bg-white/10 rounded-full overflow-hidden">
                           <div
                             className="h-full bg-gradient-to-r from-electric-blue to-neon-purple"
-                            style={{ width: `${item.energy}%` }}
+                            style={{ width: `${item.progress}%` }}
                           ></div>
                         </div>
                       </div>

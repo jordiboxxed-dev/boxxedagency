@@ -12,7 +12,7 @@ const timelineData = [
     icon: Search,
     relatedIds: [2, 5],
     status: "completed" as const,
-    energy: 100,
+    progress: 20,
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const timelineData = [
     icon: DraftingCompass,
     relatedIds: [1, 3],
     status: "completed" as const,
-    energy: 100,
+    progress: 40,
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const timelineData = [
     icon: Code,
     relatedIds: [2, 4],
     status: "completed" as const,
-    energy: 100,
+    progress: 60,
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const timelineData = [
     icon: TestTube,
     relatedIds: [3, 5],
     status: "completed" as const,
-    energy: 100,
+    progress: 80,
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const timelineData = [
     icon: Rocket,
     relatedIds: [4, 1],
     status: "completed" as const,
-    energy: 100,
+    progress: 100,
   },
 ];
 
