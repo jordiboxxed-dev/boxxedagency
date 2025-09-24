@@ -168,13 +168,13 @@ export default function RadialOrbitalTimeline({
             transform: `translate(${centerOffset.x}px, ${centerOffset.y}px)`,
           }}
         >
-          <div className="absolute w-16 h-16 rounded-full bg-gradient-to-br from-neon-purple to-purple-400 animate-pulse flex items-center justify-center z-10">
-            <div className="absolute w-20 h-20 rounded-full border border-white/20 animate-ping opacity-70"></div>
+          <div className="absolute w-20 h-20 rounded-full bg-gradient-to-br from-neon-purple to-purple-400 animate-pulse flex items-center justify-center z-10 transition-transform duration-300 hover:scale-110">
+            <div className="absolute w-24 h-24 rounded-full border border-white/20 animate-ping opacity-70"></div>
             <div
-              className="absolute w-24 h-24 rounded-full border border-white/10 animate-ping opacity-50"
+              className="absolute w-28 h-28 rounded-full border border-white/10 animate-ping opacity-50"
               style={{ animationDelay: "0.5s" }}
             ></div>
-            <div className="w-8 h-8 rounded-full bg-white/80 backdrop-blur-md"></div>
+            <div className="w-10 h-10 rounded-full bg-white/80 backdrop-blur-md"></div>
           </div>
 
           <div className="absolute w-[600px] h-[600px] rounded-full border border-white/10"></div>
@@ -218,7 +218,7 @@ export default function RadialOrbitalTimeline({
 
                 <div
                   className={`
-                  w-10 h-10 rounded-full flex items-center justify-center
+                  w-14 h-14 rounded-full flex items-center justify-center
                   ${
                     isExpanded
                       ? "bg-white text-black"
@@ -238,12 +238,12 @@ export default function RadialOrbitalTimeline({
                   ${isExpanded ? "scale-150" : ""}
                 `}
                 >
-                  <Icon size={16} />
+                  <Icon size={20} />
                 </div>
 
                 <div
                   className={`
-                  absolute top-12 left-1/2 -translate-x-1/2 whitespace-nowrap
+                  absolute top-16 left-1/2 -translate-x-1/2 whitespace-nowrap
                   text-sm font-semibold tracking-wider
                   transition-all duration-300
                   ${isExpanded ? "text-white scale-125" : "text-white/70"}
@@ -253,7 +253,7 @@ export default function RadialOrbitalTimeline({
                 </div>
 
                 {isExpanded && (
-                  <Card className="absolute top-24 left-1/2 -translate-x-1/2 w-80 bg-black/90 backdrop-blur-lg border-white/30 shadow-xl shadow-white/10 overflow-visible">
+                  <Card className="absolute top-28 left-1/2 -translate-x-1/2 w-80 bg-black/90 backdrop-blur-lg border-white/30 shadow-xl shadow-white/10 overflow-visible transition-all duration-300 hover:border-neon-purple hover:shadow-glow-purple">
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-px h-3 bg-white/50"></div>
                     <CardHeader className="pb-2">
                       <div className="flex justify-between items-center">

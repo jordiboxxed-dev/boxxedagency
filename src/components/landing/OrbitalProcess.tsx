@@ -69,8 +69,8 @@ const timelineData = [
   },
   {
     id: 6,
-    title: "6. Soporte",
-    cardTitle: "Escalado",
+    title: "6. Escalado",
+    cardTitle: "Soporte",
     date: "Paso 6",
     content: "Ofrecemos soporte continuo y te ayudamos a escalar la solución a medida que tu negocio crece.",
     category: "Proceso",
