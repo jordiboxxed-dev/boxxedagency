@@ -252,57 +252,64 @@ export default function RadialOrbitalTimeline({
                 </div>
 
                 {isExpanded && (
-                  <Card className="group absolute top-36 left-1/2 -translate-x-1/2 w-80 bg-black/90 backdrop-blur-lg border-white/30 shadow-xl shadow-white/10 overflow-visible transition-all duration-300 hover:border-neon-purple hover:shadow-glow-purple">
+                  <div className="group absolute top-36 left-1/2 -translate-x-1/2 w-80">
                     <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-px h-8 bg-white/50 transition-colors duration-300 group-hover:bg-neon-purple"></div>
-                    <CardHeader className="pb-2">
-                      <div className="flex justify-between items-center">
-                        <Badge
-                          className={`px-2 text-xs ${getStatusStyles(
-                            item.status
-                          )}`}
-                        >
-                          {item.cardTitle.toUpperCase()}
-                        </Badge>
-                        <span className="text-xs font-mono text-white/50">
-                          {item.date}
-                        </span>
-                      </div>
-                      <CardTitle className="text-base mt-2">
-                        {item.cardTitle}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="text-sm text-white/80">
-                      <p>{item.content}</p>
-
-                      <div className="mt-4 pt-3 border-t border-white/10">
-                        <div className="flex justify-between items-center text-sm mb-1">
-                          <span className="flex items-center">
-                            <TrendingUp size={12} className="mr-1" />
-                            Progreso del Proyecto
+                    <Card className="w-full bg-black/90 backdrop-blur-lg border-white/30 shadow-xl shadow-white/10 overflow-visible transition-all duration-300 group-hover:border-neon-purple group-hover:shadow-glow-purple">
+                      <CardHeader className="pb-2">
+                        <div className="flex justify-between items-center">
+                          <Badge
+                            className={`px-2 text-xs ${getStatusStyles(
+                              item.status
+                            )}`}
+                          >
+                            {item.cardTitle.toUpperCase()}
+                          </Badge>
+                          <span className="text-xs font-mono text-white/50">
+                            {item.date}
                           </span>
-                          <span className="font-mono">{item.progress}%</span>
                         </div>
-                        <div className="w-full h-1 bg-white/10 rounded-full overflow-hidden">
-                          <div
-                            className="h-full bg-gradient-to-r from-electric-blue to-neon-purple"
-                            style={{ width: `${item.progress}%` }}
-                          ></div>
-                        </div>
-                      </div>
+                        <CardTitle className="text-base mt-2">
+                          {item.cardTitle}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="text-sm text-white/80">
+                        <p>{item.content}</p>
 
-                      {item.deliverable && (
                         <div className="mt-4 pt-3 border-t border-white/10">
-                          <div className="flex items-center mb-2">
-                            <Package size={12} className="text-white/70 mr-1" />
-                            <h4 className="text-sm uppercase tracking-wider font-medium text-white/70">
-                              Resultado Clave
-                            </h4>
+                          <div className="flex justify-between items-center text-sm mb-1">
+                            <span className="flex items-center">
+                              <TrendingUp size={12} className="mr-1" />
+                              Progreso del Proyecto
+                            </span>
+                            <span className="font-mono">{item.progress}%</span>
                           </div>
-                          <p className="text-sm text-white/90 font-medium">{item.deliverable}</p>
+                          <div className="w-full h-1 bg-white/10 rounded-full overflow-hidden">
+                            <div
+                              className="h-full bg-gradient-to-r from-electric-blue to-neon-purple"
+                              style={{ width: `${item.progress}%` }}
+                            ></div>
+                          </div>
                         </div>
-                      )}
-                    </CardContent>
-                  </Card>
+
+                        {item.deliverable && (
+                          <div className="mt-4 pt-3 border-t border-white/10">
+                            <div className="flex items-center mb-2">
+                              <Package
+                                size={12}
+                                className="text-white/70 mr-1"
+                              />
+                              <h4 className="text-sm uppercase tracking-wider font-medium text-white/70">
+                                Resultado Clave
+                              </h4>
+                            </div>
+                            <p className="text-sm text-white/90 font-medium">
+                              {item.deliverable}
+                            </p>
+                          </div>
+                        )}
+                      </CardContent>
+                    </Card>
+                  </div>
                 )}
               </div>
             );
