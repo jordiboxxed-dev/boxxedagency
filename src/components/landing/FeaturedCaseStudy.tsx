@@ -25,19 +25,21 @@ const FeaturedCaseStudy = () => {
   return (
     <section id="featured-case-study" className="py-16 md:py-24 bg-anthracite-gray">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Columna de texto */}
-          <div className="flex flex-col justify-center">
-            <Badge variant="secondary" className="bg-electric-blue/20 text-electric-blue border border-electric-blue/30 w-fit">
-              Caso de Estudio
-            </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
-              De startup caótica a líder del mercado
-            </h2>
-            <p className="text-lg text-gray-300 mb-8">
-              Un e-commerce de productos naturales que facturaba $50K/mes con procesos manuales y sin estrategia clara. En 6 meses llegó a $220K/mes con nuestro sistema automatizado.
-            </p>
-            <div className="space-y-6 mb-10">
+          <div className="flex flex-col">
+            <div>
+              <Badge variant="secondary" className="bg-electric-blue/20 text-electric-blue border border-electric-blue/30 w-fit">
+                Caso de Estudio
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
+                De startup caótica a líder del mercado
+              </h2>
+              <p className="text-lg text-gray-300">
+                Un e-commerce de productos naturales que facturaba $50K/mes con procesos manuales y sin estrategia clara. En 6 meses llegó a $220K/mes con nuestro sistema automatizado.
+              </p>
+            </div>
+            <div className="space-y-6 my-8">
               <div className="bg-deep-black/30 border-l-4 border-red-500 p-4 rounded-r-lg">
                 <p className="font-bold text-red-400 text-sm uppercase">Antes</p>
                 <h3 className="font-semibold text-lg">Procesos manuales y desorganizados</h3>
@@ -49,14 +51,16 @@ const FeaturedCaseStudy = () => {
                 <p className="text-gray-400 text-sm">CRM integrado, contenido optimizado, nurturing automático.</p>
               </div>
             </div>
-            <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple w-fit">
-              Ver caso completo
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <div className="mt-auto">
+              <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple w-fit">
+                Ver caso completo
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
           </div>
 
           {/* Columna de imagen y estadísticas */}
-          <div className="space-y-8">
+          <div className="flex flex-col">
             <div className="relative">
               <img src="/placeholder.svg" alt="Dashboard de resultados" className="rounded-lg shadow-2xl shadow-electric-blue/10 w-full h-auto object-cover" />
               <div className="absolute bottom-4 left-4">
@@ -68,7 +72,7 @@ const FeaturedCaseStudy = () => {
                 </Card>
               </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-auto pt-8">
               {stats.map((stat, index) => (
                 <Card key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 p-4 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple">
                   <CardContent className="p-0 flex flex-col items-center justify-center h-full">
