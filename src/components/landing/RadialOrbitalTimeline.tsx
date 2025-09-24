@@ -161,13 +161,13 @@ export default function RadialOrbitalTimeline({
     >
       <div className="relative w-full max-w-4xl h-full flex items-center justify-center">
         <div
-          className="absolute w-full h-full flex items-center justify-center"
+          className="absolute w-[600px] h-[600px]"
           ref={orbitRef}
           style={{
             transform: `translate(${centerOffset.x}px, ${centerOffset.y}px)`,
           }}
         >
-          <div className="absolute w-20 h-20 rounded-full bg-gradient-to-br from-neon-purple to-purple-400 animate-pulse flex items-center justify-center z-10 transition-transform duration-300 hover:scale-110">
+          <div className="absolute w-20 h-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-neon-purple to-purple-400 animate-pulse flex items-center justify-center z-10 transition-transform duration-300 hover:scale-110">
             <div className="absolute w-24 h-24 rounded-full border border-white/20 animate-ping opacity-70"></div>
             <div
               className="absolute w-28 h-28 rounded-full border border-white/10 animate-ping opacity-50"
@@ -176,7 +176,7 @@ export default function RadialOrbitalTimeline({
             <div className="w-10 h-10 rounded-full bg-white/80 backdrop-blur-md"></div>
           </div>
 
-          <div className="absolute w-[600px] h-[600px] rounded-full border border-white/10"></div>
+          <div className="absolute w-full h-full rounded-full border border-white/10"></div>
 
           {timelineData.map((item, index) => {
             const position = calculateNodePosition(index, timelineData.length);
@@ -186,7 +186,7 @@ export default function RadialOrbitalTimeline({
             const Icon = item.icon;
 
             const nodeStyle = {
-              transform: `translate(${position.x - 28}px, ${position.y - 28}px)`,
+              transform: `translate(calc(300px + ${position.x}px - 28px), calc(300px + ${position.y}px - 28px))`,
               zIndex: isExpanded ? 200 : position.zIndex,
               opacity: isExpanded ? 1 : position.opacity,
             };
@@ -252,8 +252,8 @@ export default function RadialOrbitalTimeline({
                 </div>
 
                 {isExpanded && (
-                  <Card className="absolute top-36 left-1/2 -translate-x-1/2 w-80 bg-black/90 backdrop-blur-lg border-white/30 shadow-xl shadow-white/10 overflow-visible transition-all duration-300 hover:border-neon-purple hover:shadow-glow-purple">
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-px h-3 bg-white/50"></div>
+                  <Card className="group absolute top-36 left-1/2 -translate-x-1/2 w-80 bg-black/90 backdrop-blur-lg border-white/30 shadow-xl shadow-white/10 overflow-visible transition-all duration-300 hover:border-neon-purple hover:shadow-glow-purple">
+                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-px h-8 bg-white/50 transition-colors duration-300 group-hover:bg-neon-purple"></div>
                     <CardHeader className="pb-2">
                       <div className="flex justify-between items-center">
                         <Badge
