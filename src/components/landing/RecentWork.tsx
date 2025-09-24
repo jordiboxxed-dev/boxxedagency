@@ -6,22 +6,22 @@ const projects = [
   {
     title: "BotBoxx - Agente IA",
     link: "https://botboxx-demo-vip.vercel.app/",
-    image: "/project-1.jpg",
+    image: "/project-botboxx.png",
   },
   {
-    title: "Proyecto 2",
+    title: "Cuánto Valgo",
     link: "#",
-    image: null,
+    image: "/project-cuanto-valgo.png",
   },
   {
-    title: "Proyecto 3",
+    title: "Brisk AI",
     link: "#",
-    image: null,
+    image: "/project-brisk-ai.png",
   },
   {
     title: "Proyecto 4",
     link: "#",
-image: null,
+    image: null,
   },
 ];
 
