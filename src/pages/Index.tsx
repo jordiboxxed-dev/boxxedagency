@@ -2,6 +2,7 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Authority from "@/components/landing/Authority";
 import Services from "@/components/landing/Services";
+import FeaturedCaseStudy from "@/components/landing/FeaturedCaseStudy";
 import CaseStudies from "@/components/landing/CaseStudies";
 import RecentWork from "@/components/landing/RecentWork";
 import Process from "@/components/landing/Process";
@@ -20,6 +21,7 @@ const Index = () => {
         <Hero />
         <Authority />
         <Services />
+        <FeaturedCaseStudy />
         <CaseStudies />
         <RecentWork />
         <Process />
