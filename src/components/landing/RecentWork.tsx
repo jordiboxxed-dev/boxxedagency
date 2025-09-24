@@ -4,16 +4,24 @@ import { TrendingUp } from "lucide-react";
 
 const projects = [
   {
-    title: "Proyecto 1",
+    title: "BotBoxx - Agente IA",
+    link: "https://botboxx-demo-vip.vercel.app/",
+    image: "/Screenshot 2025-09-03 at 23.44.47.png",
   },
   {
     title: "Proyecto 2",
+    link: "#",
+    image: null,
   },
   {
     title: "Proyecto 3",
+    link: "#",
+    image: null,
   },
   {
     title: "Proyecto 4",
+    link: "#",
+    image: null,
   },
 ];
 
@@ -29,17 +37,33 @@ const RecentWork = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {projects.map((project, index) => (
-            <Card
+            <a
               key={index}
-              className="bg-gradient-to-br from-electric-blue/10 to-neon-purple/10 backdrop-blur-sm border border-white/10 rounded-lg p-8 flex flex-col justify-center items-center aspect-square transition-all duration-300 hover:border-electric-blue hover:scale-105 hover:shadow-glow-blue"
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
             >
-              <CardContent className="p-0 flex flex-col items-center gap-6">
-                <div className="bg-deep-black/50 p-4 rounded-lg">
-                  <TrendingUp className="h-10 w-10 text-electric-blue" />
-                </div>
-                <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-              </CardContent>
-            </Card>
+              <Card
+                className="relative bg-gradient-to-br from-electric-blue/10 to-neon-purple/10 backdrop-blur-sm border border-white/10 rounded-lg flex flex-col justify-center items-center aspect-square transition-all duration-300 group-hover:border-electric-blue group-hover:scale-105 group-hover:shadow-glow-blue overflow-hidden"
+              >
+                {project.image ? (
+                  <>
+                    <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                      <h3 className="text-xl font-semibold text-white text-center">{project.title}</h3>
+                    </div>
+                  </>
+                ) : (
+                  <CardContent className="p-0 flex flex-col items-center gap-6">
+                    <div className="bg-deep-black/50 p-4 rounded-lg">
+                      <TrendingUp className="h-10 w-10 text-electric-blue" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-white text-center">{project.title}</h3>
+                  </CardContent>
+                )}
+              </Card>
+            </a>
           ))}
         </div>
         <div className="text-center mt-16">
