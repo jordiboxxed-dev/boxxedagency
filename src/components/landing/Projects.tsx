@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { TrendingUp } from "lucide-react";
 
@@ -25,7 +24,7 @@ const projects = [
   },
 ];
 
-const RecentWork = () => {
+const Projects = () => {
   return (
     <section id="work" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
@@ -44,7 +43,7 @@ const RecentWork = () => {
               rel="noopener noreferrer"
               className="block group"
             >
-              <Card
+              <div
                 className="relative bg-black/20 backdrop-blur-lg border border-white/10 rounded-lg aspect-square transition-all duration-300 group-hover:border-neon-purple group-hover:scale-105 group-hover:shadow-glow-purple overflow-hidden"
               >
                 {project.image ? (
@@ -56,15 +55,15 @@ const RecentWork = () => {
                   </>
                 ) : (
                   <div className="w-full h-full flex flex-col justify-center items-center">
-                    <CardContent className="p-0 flex flex-col items-center gap-6">
+                    <div className="p-0 flex flex-col items-center gap-6">
                       <div className="bg-deep-black/50 p-4 rounded-lg">
                         <TrendingUp className="h-10 w-10 text-neon-purple" />
                       </div>
                       <h3 className="text-xl font-semibold text-white text-center">{project.title}</h3>
-                    </CardContent>
+                    </div>
                   </div>
                 )}
-              </Card>
+              </div>
             </a>
           ))}
         </div>
@@ -78,4 +77,4 @@ const RecentWork = () => {
   );
 };
 
-export default RecentWork;
+export default Projects;

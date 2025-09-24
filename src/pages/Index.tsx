@@ -2,7 +2,7 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Services from "@/components/landing/Services";
 import FeaturedCaseStudy from "@/components/landing/FeaturedCaseStudy";
-import RecentWork from "@/components/landing/RecentWork";
+import Projects from "@/components/landing/Projects";
 import OrbitalProcess from "@/components/landing/OrbitalProcess";
 import About from "@/components/landing/About";
 import Pricing from "@/components/landing/Pricing";
@@ -19,7 +19,7 @@ const Index = () => {
         <Hero />
         <Services />
         <FeaturedCaseStudy />
-        <RecentWork />
+        <Projects />
         <OrbitalProcess />
         <About />
         <Pricing />
