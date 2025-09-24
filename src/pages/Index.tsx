@@ -3,6 +3,7 @@ import Hero from "@/components/landing/Hero";
 import Authority from "@/components/landing/Authority";
 import Services from "@/components/landing/Services";
 import CaseStudies from "@/components/landing/CaseStudies";
+import RecentWork from "@/components/landing/RecentWork";
 import Process from "@/components/landing/Process";
 import About from "@/components/landing/About";
 import CTASection from "@/components/landing/CTASection";
@@ -17,6 +18,7 @@ const Index = () => {
         <Authority />
         <Services />
         <CaseStudies />
+        <RecentWork />
         <Process />
         <About />
         <CTASection />
