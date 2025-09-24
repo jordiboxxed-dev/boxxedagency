@@ -66,7 +66,7 @@ const Pricing = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Planes que se adaptan a tu{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-electric-blue to-neon-purple">
+            <span className="text-neon-purple">
               crecimiento
             </span>
           </h2>
@@ -86,18 +86,18 @@ const Pricing = () => {
               <CardHeader className="relative">
                 {plan.isMostPopular && (
                   <div className="absolute -top-5 left-1/2 -translate-x-1/2">
-                    <div className="flex items-center gap-2 px-4 py-1.5 text-sm font-semibold text-white bg-gradient-to-r from-electric-blue to-neon-purple rounded-full">
+                    <div className="flex items-center gap-2 px-4 py-1.5 text-sm font-semibold text-white bg-neon-purple rounded-full">
                       <Star className="h-4 w-4" />
                       Más elegido
                     </div>
                   </div>
                 )}
-                <CardTitle className="text-2xl font-bold pt-4">{plan.name}</CardTitle>
+                <CardTitle className={cn("text-2xl font-bold pt-4", plan.isMostPopular ? "text-neon-purple" : "text-white")}>{plan.name}</CardTitle>
                 <CardDescription className="text-gray-400">{plan.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <div className="mb-6">
-                  <span className="text-5xl font-bold">${plan.price}</span>
+                  <span className={cn("text-5xl font-bold", plan.isMostPopular ? "text-neon-purple" : "text-white")}>${plan.price}</span>
                   <span className="text-gray-400">/mes</span>
                 </div>
                 <p className="text-sm text-gray-400 mb-6 h-10">{plan.priceDescription}</p>
