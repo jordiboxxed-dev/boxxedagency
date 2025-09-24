@@ -27,7 +27,7 @@ const FeaturedCaseStudy = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Columna de texto y estadísticas */}
-          <div className="flex flex-col">
+          <div className="flex flex-col h-full">
             <div>
               <Badge variant="secondary" className="bg-neon-purple/20 text-neon-purple border border-neon-purple/30 w-fit">
                 Caso de Estudio
@@ -38,31 +38,35 @@ const FeaturedCaseStudy = () => {
               <p className="text-lg text-gray-300">
                 Ayudamos a un e-commerce de productos naturales a superar el estancamiento. Facturaban $50K/mes, ahogados en procesos manuales y sin una estrategia de crecimiento clara. Nuestro equipo implementó un sistema de automatización integral que transformó su operación. En solo 6 meses, no solo optimizaron su tiempo, sino que dispararon su facturación a $220K/mes, estableciéndose como líderes en su nicho.
               </p>
-            </div>
-            <div className="space-y-6 my-8">
-              <div className="bg-deep-black/30 border-l-4 border-red-500 p-4 rounded-r-lg">
-                <p className="font-bold text-red-400 text-sm uppercase">Antes</p>
-                <h3 className="font-semibold text-lg">Procesos manuales y desorganizados</h3>
-                <p className="text-gray-400 text-sm">Sin seguimiento, contenido inconsistente, pérdida de leads.</p>
+              <div className="space-y-6 my-8">
+                <div className="bg-deep-black/30 border-l-4 border-red-500 p-4 rounded-r-lg">
+                  <p className="font-bold text-red-400 text-sm uppercase">Antes</p>
+                  <h3 className="font-semibold text-lg">Procesos manuales y desorganizados</h3>
+                  <p className="text-gray-400 text-sm">Sin seguimiento, contenido inconsistente, pérdida de leads.</p>
+                </div>
+                <div className="bg-deep-black/30 border-l-4 border-neon-green p-4 rounded-r-lg">
+                  <p className="font-bold text-neon-green text-sm uppercase">Después</p>
+                  <h3 className="font-semibold text-lg">Sistema automatizado completo</h3>
+                  <p className="text-gray-400 text-sm">CRM integrado, contenido optimizado, nurturing automático.</p>
+                </div>
               </div>
-              <div className="bg-deep-black/30 border-l-4 border-neon-green p-4 rounded-r-lg">
-                <p className="font-bold text-neon-green text-sm uppercase">Después</p>
-                <h3 className="font-semibold text-lg">Sistema automatizado completo</h3>
-                <p className="text-gray-400 text-sm">CRM integrado, contenido optimizado, nurturing automático.</p>
+            </div>
+            
+            <div className="flex-grow flex flex-col justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {stats.map((stat, index) => (
+                  <Card key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 p-4 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple">
+                    <CardContent className="p-0 flex flex-col items-center justify-center h-full">
+                      {stat.icon}
+                      <p className="text-2xl font-bold text-white mt-2">{stat.value}</p>
+                      <p className="text-xs text-gray-400 mt-1">{stat.label}</p>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 my-8">
-              {stats.map((stat, index) => (
-                <Card key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 p-4 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple">
-                  <CardContent className="p-0 flex flex-col items-center justify-center h-full">
-                    {stat.icon}
-                    <p className="text-2xl font-bold text-white mt-2">{stat.value}</p>
-                    <p className="text-xs text-gray-400 mt-1">{stat.label}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            <div className="mt-auto">
+
+            <div className="mt-auto pt-8">
               <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple w-fit">
                 Ver caso completo
                 <ArrowRight className="ml-2 h-5 w-5" />
