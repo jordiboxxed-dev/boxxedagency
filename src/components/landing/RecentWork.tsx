@@ -45,7 +45,7 @@ const RecentWork = () => {
               className="block group"
             >
               <Card
-                className="relative bg-gradient-to-br from-electric-blue/10 to-neon-purple/10 backdrop-blur-sm border border-white/10 rounded-lg flex flex-col justify-center items-center aspect-square transition-all duration-300 group-hover:border-electric-blue group-hover:scale-105 group-hover:shadow-glow-blue overflow-hidden"
+                className="relative bg-anthracite-gray backdrop-blur-sm border border-white/10 rounded-lg flex flex-col justify-center items-center aspect-square transition-all duration-300 group-hover:border-neon-purple group-hover:scale-105 group-hover:shadow-glow-purple overflow-hidden"
               >
                 {project.image ? (
                   <>
@@ -57,7 +57,7 @@ const RecentWork = () => {
                 ) : (
                   <CardContent className="p-0 flex flex-col items-center gap-6">
                     <div className="bg-deep-black/50 p-4 rounded-lg">
-                      <TrendingUp className="h-10 w-10 text-electric-blue" />
+                      <TrendingUp className="h-10 w-10 text-neon-purple" />
                     </div>
                     <h3 className="text-xl font-semibold text-white text-center">{project.title}</h3>
                   </CardContent>
