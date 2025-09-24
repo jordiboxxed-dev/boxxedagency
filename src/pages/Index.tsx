@@ -10,10 +10,12 @@ import CTASection from "@/components/landing/CTASection";
 import FAQ from "@/components/landing/FAQ";
 import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
+import Background from "@/components/landing/Background";
 
 const Index = () => {
   return (
-    <div className="bg-deep-black text-white overflow-x-hidden antialiased">
+    <div className="bg-deep-black text-white overflow-x-hidden antialiased relative">
+      <Background />
       <Header />
       <main>
         <Hero />
