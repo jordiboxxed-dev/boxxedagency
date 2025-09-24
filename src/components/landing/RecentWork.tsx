@@ -6,7 +6,7 @@ const projects = [
   {
     title: "BotBoxx - Agente IA",
     link: "https://botboxx-demo-vip.vercel.app/",
-    image: "/Screenshot 2025-09-03 at 23.44.47.png",
+    image: "/project-botboxx.png",
   },
   {
     title: "Proyecto 2",
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Proyecto 4",
     link: "#",
-    image: null,
+image: null,
   },
 ];
 
