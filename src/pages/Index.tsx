@@ -8,6 +8,7 @@ import RecentWork from "@/components/landing/RecentWork";
 import Process from "@/components/landing/Process";
 import OrbitalProcess from "@/components/landing/OrbitalProcess";
 import About from "@/components/landing/About";
+import Pricing from "@/components/landing/Pricing";
 import CTASection from "@/components/landing/CTASection";
 import FAQ from "@/components/landing/FAQ";
 import FinalCTA from "@/components/landing/FinalCTA";
@@ -27,6 +28,7 @@ const Index = () => {
         <Process />
         <OrbitalProcess />
         <About />
+        <Pricing />
         <CTASection />
         <FAQ />
         <FinalCTA />
