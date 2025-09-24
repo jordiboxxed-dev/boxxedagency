@@ -7,6 +7,7 @@ import RecentWork from "@/components/landing/RecentWork";
 import Process from "@/components/landing/Process";
 import About from "@/components/landing/About";
 import CTASection from "@/components/landing/CTASection";
+import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
         <Process />
         <About />
         <CTASection />
+        <FAQ />
       </main>
       <Footer />
     </div>
