@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 interface TimelineItem {
   id: number;
   title: string;
+  cardTitle: string;
   date: string;
   content: string;
   category: string;
@@ -260,18 +261,14 @@ export default function RadialOrbitalTimeline({
                             item.status
                           )}`}
                         >
-                          {item.status === "completed"
-                            ? "COMPLETADO"
-                            : item.status === "in-progress"
-                            ? "EN PROGRESO"
-                            : "PENDIENTE"}
+                          {item.cardTitle.toUpperCase()}
                         </Badge>
                         <span className="text-xs font-mono text-white/50">
                           {item.date}
                         </span>
                       </div>
                       <CardTitle className="text-sm mt-2">
-                        {item.title}
+                        {item.cardTitle}
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="text-xs text-white/80">
