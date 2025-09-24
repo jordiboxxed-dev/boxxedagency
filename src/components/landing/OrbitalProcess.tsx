@@ -13,6 +13,7 @@ const timelineData = [
     relatedIds: [6, 2],
     status: "completed" as const,
     progress: 17,
+    deliverable: "Roadmap de IA y Plan de Acción.",
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ const timelineData = [
     relatedIds: [1, 3],
     status: "completed" as const,
     progress: 33,
+    deliverable: "Prototipo Interactivo y Diseño de Arquitectura.",
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ const timelineData = [
     relatedIds: [2, 4],
     status: "completed" as const,
     progress: 50,
+    deliverable: "Solución Funcional Integrada.",
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ const timelineData = [
     relatedIds: [3, 5],
     status: "completed" as const,
     progress: 67,
+    deliverable: "Informe de Rendimiento y Calidad.",
   },
   {
     id: 5,
@@ -61,6 +65,7 @@ const timelineData = [
     relatedIds: [4, 6],
     status: "completed" as const,
     progress: 83,
+    deliverable: "Despliegue en Producción.",
   },
   {
     id: 6,
@@ -73,6 +78,7 @@ const timelineData = [
     relatedIds: [5, 1],
     status: "completed" as const,
     progress: 100,
+    deliverable: "Plan de Soporte y Mejoras.",
   },
 ];
 
