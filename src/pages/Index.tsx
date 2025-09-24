@@ -9,6 +9,7 @@ import OrbitalProcess from "@/components/landing/OrbitalProcess";
 import About from "@/components/landing/About";
 import CTASection from "@/components/landing/CTASection";
 import FAQ from "@/components/landing/FAQ";
+import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
@@ -26,6 +27,7 @@ const Index = () => {
         <About />
         <CTASection />
         <FAQ />
+        <FinalCTA />
       </main>
       <Footer />
     </div>
