@@ -67,7 +67,7 @@ const RecentWork = () => {
           ))}
         </div>
         <div className="text-center mt-16">
-          <Button variant="outline" size="lg" className="border-neon-purple text-neon-purple hover:bg-neon-purple/10 hover:text-neon-purple font-bold text-lg px-8 py-6">
+          <Button className="bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
             Ver portafolio completo
           </Button>
         </div>
