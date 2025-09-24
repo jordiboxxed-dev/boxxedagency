@@ -243,7 +243,7 @@ export default function RadialOrbitalTimeline({
                 <div
                   className={`
                   absolute top-12 left-1/2 -translate-x-1/2 whitespace-nowrap
-                  text-xs font-semibold tracking-wider
+                  text-sm font-semibold tracking-wider
                   transition-all duration-300
                   ${isExpanded ? "text-white scale-125" : "text-white/70"}
                 `}
