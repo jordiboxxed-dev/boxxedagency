@@ -45,7 +45,7 @@ const RecentWork = () => {
               className="block group"
             >
               <Card
-                className="relative bg-black/20 backdrop-blur-lg border border-white/10 rounded-lg flex flex-col justify-center items-center aspect-square transition-all duration-300 group-hover:border-neon-purple group-hover:scale-105 group-hover:shadow-glow-purple overflow-hidden"
+                className="relative bg-black/20 backdrop-blur-lg border border-white/10 rounded-lg aspect-square transition-all duration-300 group-hover:border-neon-purple group-hover:scale-105 group-hover:shadow-glow-purple overflow-hidden"
               >
                 {project.image ? (
                   <>
@@ -55,12 +55,14 @@ const RecentWork = () => {
                     </div>
                   </>
                 ) : (
-                  <CardContent className="p-0 flex flex-col items-center gap-6">
-                    <div className="bg-deep-black/50 p-4 rounded-lg">
-                      <TrendingUp className="h-10 w-10 text-neon-purple" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-white text-center">{project.title}</h3>
-                  </CardContent>
+                  <div className="w-full h-full flex flex-col justify-center items-center">
+                    <CardContent className="p-0 flex flex-col items-center gap-6">
+                      <div className="bg-deep-black/50 p-4 rounded-lg">
+                        <TrendingUp className="h-10 w-10 text-neon-purple" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-white text-center">{project.title}</h3>
+                    </CardContent>
+                  </div>
                 )}
               </Card>
             </a>
