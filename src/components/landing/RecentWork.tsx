@@ -45,7 +45,7 @@ const RecentWork = () => {
               className="block group"
             >
               <Card
-                className="relative bg-anthracite-gray backdrop-blur-sm border border-white/10 rounded-lg flex flex-col justify-center items-center aspect-square transition-all duration-300 group-hover:border-neon-purple group-hover:scale-105 group-hover:shadow-glow-purple overflow-hidden"
+                className="relative bg-black/20 backdrop-blur-lg border border-white/10 rounded-lg flex flex-col justify-center items-center aspect-square transition-all duration-300 group-hover:border-neon-purple group-hover:scale-105 group-hover:shadow-glow-purple overflow-hidden"
               >
                 {project.image ? (
                   <>

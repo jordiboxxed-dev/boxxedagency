@@ -5,7 +5,7 @@ const FinalCTA = () => {
   return (
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-3xl mx-auto text-center bg-anthracite-gray border border-gray-800 rounded-lg p-8 md:p-12 relative overflow-hidden transition-all duration-300 hover:border-neon-purple hover:shadow-glow-purple">
+        <div className="max-w-3xl mx-auto text-center bg-black/20 backdrop-blur-lg border border-white/10 rounded-lg p-8 md:p-12 relative overflow-hidden transition-all duration-300 hover:border-neon-purple hover:shadow-glow-purple">
           <div className="absolute -top-20 -left-20 h-40 w-40 rounded-full bg-electric-blue/10 blur-3xl"></div>
           <div className="absolute -bottom-20 -right-20 h-40 w-40 rounded-full bg-neon-purple/10 blur-3xl"></div>
           

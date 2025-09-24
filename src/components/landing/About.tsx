@@ -19,7 +19,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="bg-deep-black/30 p-8 rounded-lg border border-gray-800">
+          <div className="bg-black/20 backdrop-blur-lg border border-white/10 p-8 rounded-lg">
             <h3 className="text-2xl font-bold mb-4">Nuestro Enfoque Técnico</h3>
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> Metodologías Ágiles</li>

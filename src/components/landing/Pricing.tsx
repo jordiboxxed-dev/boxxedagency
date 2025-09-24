@@ -79,7 +79,7 @@ const Pricing = () => {
             <Card
               key={plan.name}
               className={cn(
-                "bg-deep-black/30 border-gray-800 flex flex-col h-full transition-all duration-300",
+                "bg-black/20 backdrop-blur-lg border border-white/10 flex flex-col h-full transition-all duration-300",
                 plan.isMostPopular && "border-2 border-neon-purple shadow-glow-purple lg:scale-105"
               )}
             >

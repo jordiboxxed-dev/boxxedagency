@@ -55,7 +55,7 @@ const FeaturedCaseStudy = () => {
             <div className="flex-grow flex flex-col justify-center">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {stats.map((stat, index) => (
-                  <Card key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 p-4 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple">
+                  <Card key={index} className="bg-black/20 backdrop-blur-lg border border-white/10 p-4 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple">
                     <CardContent className="p-0 flex flex-col items-center justify-center h-full">
                       {stat.icon}
                       <p className="text-2xl font-bold text-white mt-2">{stat.value}</p>
@@ -78,7 +78,7 @@ const FeaturedCaseStudy = () => {
           <div className="relative h-full min-h-[400px]">
             <img src="/placeholder.svg" alt="Dashboard de resultados" className="rounded-lg shadow-2xl shadow-electric-blue/10 w-full h-full object-cover" />
             <div className="absolute bottom-4 left-4">
-              <Card className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-lg">
+              <Card className="bg-black/20 backdrop-blur-lg border border-white/10 p-4 rounded-lg">
                 <CardContent className="p-0 text-center">
                   <p className="text-2xl font-bold text-white">6 meses</p>
                   <p className="text-sm text-gray-300">de implementación</p>
