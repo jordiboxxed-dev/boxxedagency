@@ -36,7 +36,7 @@ const FeaturedCaseStudy = () => {
                 De startup caótica a líder del mercado
               </h2>
               <p className="text-lg text-gray-300">
-                Un e-commerce de productos naturales que facturaba $50K/mes con procesos manuales y sin estrategia clara. En 6 meses llegó a $220K/mes con nuestro sistema automatizado.
+                Ayudamos a un e-commerce de productos naturales a superar el estancamiento. Facturaban $50K/mes, ahogados en procesos manuales y sin una estrategia de crecimiento clara. Nuestro equipo implementó un sistema de automatización integral que transformó su operación. En solo 6 meses, no solo optimizaron su tiempo, sino que dispararon su facturación a $220K/mes, estableciéndose como líderes en su nicho.
               </p>
             </div>
             <div className="space-y-6 my-8">
