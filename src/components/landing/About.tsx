@@ -4,7 +4,7 @@ const About = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Por qué Boxxed Agency?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Por qué <span className="text-neon-purple">Boxxed Agency</span>?</h2>
             <p className="text-lg text-gray-300 mb-6">
               No solo construimos tecnología; construimos ventajas competitivas. Nuestro equipo combina una profunda experiencia técnica en IA con una mentalidad estratégica de negocio para entregar soluciones que no solo funcionan, sino que generan un valor medible.
             </p>
