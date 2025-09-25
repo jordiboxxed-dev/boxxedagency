@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 const latestWorkItems = [
   {
     title: "BotBoxx - Agente IA",
-    image: "/project-botboxx-new.png",
+    image: "/BOT BOXXED - 1.png",
   },
   {
     title: "Cuánto Valgo",
