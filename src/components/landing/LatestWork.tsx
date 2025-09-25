@@ -3,19 +3,19 @@ import { Card } from "@/components/ui/card";
 const latestWorkItems = [
   {
     title: "BotBoxx - Agente IA",
-    image: "/project-botboxx.png",
+    image: "project-botboxx.png",
   },
   {
     title: "Cuánto Valgo",
-    image: "/project-cuanto-valgo.png",
+    image: "project-cuanto-valgo.png",
   },
   {
     title: "Brisk AI",
-    image: "/project-brisk-ai.png",
+    image: "project-brisk-ai.png",
   },
   {
     title: "Próximo Proyecto",
-    image: "/placeholder.svg",
+    image: "placeholder.svg",
   },
 ];
 

@@ -5,17 +5,17 @@ const portfolioItems = [
   {
     title: "BotBoxx - Agente IA",
     link: "https://botboxx-demo-vip.vercel.app/",
-    image: "/project-botboxx.png",
+    image: "project-botboxx.png",
   },
   {
     title: "Cuánto Valgo",
     link: "#",
-    image: "/project-cuanto-valgo.png",
+    image: "project-cuanto-valgo.png",
   },
   {
     title: "Brisk AI",
     link: "#",
-    image: "/project-brisk-ai.png",
+    image: "project-brisk-ai.png",
   },
   {
     title: "Próximamente",
