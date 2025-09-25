@@ -3,19 +3,19 @@ import { Card } from "@/components/ui/card";
 const latestWorkItems = [
   {
     title: "BotBoxx - Agente IA",
-    image: "project-botboxx.png",
+    image: "/project-botboxx.png",
   },
   {
     title: "Cuánto Valgo",
-    image: "project-cuanto-valgo.png",
+    image: "/project-cuanto-valgo.png",
   },
   {
     title: "Brisk AI",
-    image: "project-brisk-ai.png",
+    image: "/project-brisk-ai.png",
   },
   {
     title: "Próximo Proyecto",
-    image: "placeholder.svg",
+    image: "/placeholder.svg",
   },
 ];
 
@@ -39,6 +39,10 @@ const LatestWork = () => {
                 src={item.image}
                 alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = '/placeholder.svg';
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-4">

@@ -5,17 +5,17 @@ const portfolioItems = [
   {
     title: "BotBoxx - Agente IA",
     link: "https://botboxx-demo-vip.vercel.app/",
-    image: "project-botboxx.png",
+    image: "/project-botboxx.png",
   },
   {
     title: "Cuánto Valgo",
     link: "#",
-    image: "project-cuanto-valgo.png",
+    image: "/project-cuanto-valgo.png",
   },
   {
     title: "Brisk AI",
     link: "#",
-    image: "project-brisk-ai.png",
+    image: "/project-brisk-ai.png",
   },
   {
     title: "Próximamente",
@@ -48,6 +48,10 @@ const Portfolio = () => {
                   src={item.image} 
                   alt={item.title} 
                   className="w-full h-full object-cover" 
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = '/placeholder.svg';
+                  }}
                 />
               ) : (
                 <div className="w-full h-full flex flex-col justify-center items-center text-center p-4">
