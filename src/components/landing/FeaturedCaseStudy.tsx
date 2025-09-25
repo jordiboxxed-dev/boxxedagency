@@ -76,7 +76,7 @@ const FeaturedCaseStudy = () => {
 
           {/* Columna de imagen */}
           <div className="relative h-full min-h-[400px]">
-            <img src="placeholder.svg" alt="Dashboard de resultados" className="rounded-lg shadow-2xl shadow-electric-blue/10 w-full h-full object-cover" />
+            <img src="case-study-dashboard.png" alt="Dashboard de resultados" className="rounded-lg shadow-2xl shadow-electric-blue/10 w-full h-full object-cover" />
             <div className="absolute bottom-4 left-4">
               <Card className="bg-black/20 backdrop-blur-lg border border-white/10 p-4 rounded-lg">
                 <CardContent className="p-0 text-center">
