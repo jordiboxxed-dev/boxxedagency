@@ -1,7 +1,7 @@
 // @ts-ignore: This is a Deno-specific import that is not recognized by the local TypeScript server.
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 
-const N8N_WEBHOOK_URL = "https://n8n.boxxed.agency/webhook-test/b4606122-ada6-4092-ad17-01b8b69ba620";
+const N8N_WEBHOOK_URL = "https://n8n.boxxed.agency/webhook/b4606122-ada6-4092-ad17-01b8b69ba620";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
