@@ -5,7 +5,7 @@
   "description": "Boxxed Agency AI Infrastructure project.",
   "type": "module",
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "vite",
