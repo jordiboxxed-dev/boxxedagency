@@ -29,17 +29,34 @@ const CTASection = () => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const { error } = await supabase.from('contacts').insert([
+    // 1. Guardar en la base de datos
+    const { error: dbError } = await supabase.from('contacts').insert([
       { name: values.name, email: values.email, phone: values.phone, message: values.message },
     ]);
 
-    if (error) {
-      console.error('Error inserting data:', error);
+    if (dbError) {
+      console.error('Error al insertar en la base de datos:', dbError);
       showError("Hubo un error al enviar tu mensaje. Inténtalo de nuevo.");
-    } else {
-      showSuccess("¡Mensaje enviado! Nos pondremos en contacto contigo pronto.");
-      form.reset();
+      return; // Detener si falla la inserción en la BD
     }
+
+    // 2. Invocar la Edge Function para notificar a n8n (si la BD tuvo éxito)
+    try {
+      const { error: functionError } = await supabase.functions.invoke('contact-form-forwarder', {
+        body: values,
+      });
+
+      if (functionError) {
+        // No mostramos error al usuario, pero lo registramos.
+        // La prioridad es que el contacto quede guardado.
+        console.error('Error al invocar la Edge Function:', functionError);
+      }
+    } catch (e) {
+      console.error('Error inesperado al invocar la Edge Function:', e);
+    }
+
+    showSuccess("¡Mensaje enviado! Nos pondremos en contacto contigo pronto.");
+    form.reset();
   }
 
   return (
