@@ -1,14 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BrainCircuit, Bot, Zap, Briefcase } from "lucide-react";
+import { BrainCircuit, Bot, Zap, Briefcase, Sparkles } from "lucide-react";
 
 const services = [
   {
-    icon: <BrainCircuit className="h-10 w-10 text-neon-purple" />,
+    icon: <Sparkles className="h-10 w-10 text-neon-purple" />,
     title: "Infraestructuras de IA",
     description: "Diseñamos y desplegamos arquitecturas de IA robustas y escalables, personalizadas para tus necesidades.",
   },
   {
-    icon: <Zap className="h-10 w-10 text-neon-purple" />,
+    icon: <BrainCircuit className="h-10 w-10 text-neon-purple" />,
     title: "Automatizaciones Inteligentes",
     description: "Optimizamos tus flujos de trabajo con automatizaciones que ahorran tiempo y reducen errores.",
   },
