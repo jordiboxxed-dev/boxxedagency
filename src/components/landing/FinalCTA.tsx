@@ -14,10 +14,12 @@ const FinalCTA = () => {
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
               Hablemos directo. Agendá una llamada de 15 minutos para que podamos conocer tu caso específico.
             </p>
-            <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
-              Agendar Llamada Gratuita
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="#contact">
+              <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
+                Agendar Llamada Gratuita
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>
