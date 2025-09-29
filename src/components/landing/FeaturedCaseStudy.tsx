@@ -1,7 +1,6 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, TrendingUp, Users, Zap } from "lucide-react";
+import { TrendingUp, Users, Zap } from "lucide-react";
 
 const FeaturedCaseStudy = () => {
   const stats = [
@@ -52,7 +51,7 @@ const FeaturedCaseStudy = () => {
               </div>
             </div>
             
-            <div className="flex-grow flex flex-col justify-center">
+            <div className="flex-grow flex flex-col justify-center mt-8">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {stats.map((stat, index) => (
                   <Card key={index} className="bg-card backdrop-blur-lg border p-4 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple">
@@ -64,13 +63,6 @@ const FeaturedCaseStudy = () => {
                   </Card>
                 ))}
               </div>
-            </div>
-
-            <div className="mt-auto pt-8">
-              <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple w-fit">
-                Ver caso completo
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
             </div>
           </div>
 
