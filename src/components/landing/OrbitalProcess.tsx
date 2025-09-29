@@ -1,7 +1,5 @@
 import { Search, DraftingCompass, Code, TestTube, Rocket, LifeBuoy } from "lucide-react";
 import RadialOrbitalTimeline from "@/components/landing/RadialOrbitalTimeline";
-import MobileProcessTimeline from "./MobileProcessTimeline";
-import { useIsMobile } from "@/hooks/use-mobile";
 
 const timelineData = [
   {
@@ -85,27 +83,18 @@ const timelineData = [
 ];
 
 const OrbitalProcess = () => {
-  const isMobile = useIsMobile();
-
   return (
     <section id="orbital-process" className="py-16 md:py-24 bg-deep-black scroll-mt-16">
         <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestro Proceso de Trabajo</h2>
                 <p className="text-lg text-muted-foreground">
-                    {isMobile 
-                      ? "Explora las fases de nuestro trabajo."
-                      : "Explora las fases de nuestro trabajo. Haz clic en un nodo para ver los detalles."
-                    }
+                  Explora las fases de nuestro trabajo. Haz clic en un nodo para ver los detalles.
                 </p>
             </div>
-            {isMobile ? (
-              <MobileProcessTimeline timelineData={timelineData} />
-            ) : (
-              <div className="relative w-full h-[800px]">
-                  <RadialOrbitalTimeline timelineData={timelineData} />
-              </div>
-            )}
+            <div className="relative w-full h-[650px] md:h-[800px]">
+                <RadialOrbitalTimeline timelineData={timelineData} />
+            </div>
         </div>
     </section>
   );

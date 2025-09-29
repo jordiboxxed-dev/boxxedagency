@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import { ArrowRight, Package, TrendingUp } from "lucide-react";
+import { Package, TrendingUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface TimelineItem {
   id: number;
@@ -26,6 +26,10 @@ interface RadialOrbitalTimelineProps {
 export default function RadialOrbitalTimeline({
   timelineData,
 }: RadialOrbitalTimelineProps) {
+  const isMobile = useIsMobile();
+  const radius = isMobile ? 140 : 300;
+  const orbitSize = radius * 2;
+
   const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>(
     {}
   );
@@ -126,7 +130,6 @@ export default function RadialOrbitalTimeline({
 
   const calculateNodePosition = (index: number, total: number) => {
     const angle = ((index / total) * 360 + rotationAngle) % 360;
-    const radius = 300;
     const radian = (angle * Math.PI) / 180;
 
     const x = radius * Math.cos(radian) + centerOffset.x;
@@ -173,19 +176,21 @@ export default function RadialOrbitalTimeline({
     >
       <div className="relative w-full max-w-4xl h-full flex items-center justify-center">
         <div
-          className="absolute w-[600px] h-[600px]"
+          className="absolute"
           ref={orbitRef}
           style={{
+            width: `${orbitSize}px`,
+            height: `${orbitSize}px`,
             transform: `translate(${centerOffset.x}px, ${centerOffset.y}px)`,
           }}
         >
-          <div className="absolute w-20 h-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-neon-purple to-purple-400 animate-pulse flex items-center justify-center z-10 transition-transform duration-300 hover:scale-110">
-            <div className="absolute w-24 h-24 rounded-full border border-foreground/20 animate-ping opacity-70"></div>
+          <div className="absolute w-16 h-16 md:w-20 md:h-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-neon-purple to-purple-400 animate-pulse flex items-center justify-center z-10 transition-transform duration-300 hover:scale-110">
+            <div className="absolute w-20 h-20 md:w-24 md:h-24 rounded-full border border-foreground/20 animate-ping opacity-70"></div>
             <div
-              className="absolute w-28 h-28 rounded-full border border-foreground/10 animate-ping opacity-50"
+              className="absolute w-24 h-24 md:w-28 md:h-28 rounded-full border border-foreground/10 animate-ping opacity-50"
               style={{ animationDelay: "0.5s" }}
             ></div>
-            <div className="w-10 h-10 rounded-full bg-foreground/80 backdrop-blur-md"></div>
+            <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-foreground/80 backdrop-blur-md"></div>
           </div>
 
           <div className="absolute w-full h-full rounded-full border border-foreground/10"></div>
@@ -196,9 +201,11 @@ export default function RadialOrbitalTimeline({
             const isRelated = isRelatedToActive(item.id);
             const isPulsing = pulseEffect[item.id];
             const Icon = item.icon;
+            const nodeSize = isMobile ? 40 : 56;
+            const nodeOffset = nodeSize / 2;
 
             const nodeStyle = {
-              transform: `translate(calc(300px + ${position.x}px - 28px), calc(300px + ${position.y}px - 28px))`,
+              transform: `translate(calc(${radius}px + ${position.x}px - ${nodeOffset}px), calc(${radius}px + ${position.y}px - ${nodeOffset}px))`,
               zIndex: isExpanded ? 200 : position.zIndex,
               opacity: isExpanded ? 1 : position.opacity,
             };
@@ -220,16 +227,16 @@ export default function RadialOrbitalTimeline({
                   }`}
                   style={{
                     background: `radial-gradient(circle, hsla(var(--foreground), 0.2) 0%, hsla(var(--foreground), 0) 70%)`,
-                    width: `${item.progress * 0.5 + 40}px`,
-                    height: `${item.progress * 0.5 + 40}px`,
-                    left: `-${(item.progress * 0.5 + 40 - 40) / 2}px`,
-                    top: `-${(item.progress * 0.5 + 40 - 40) / 2}px`,
+                    width: `${item.progress * 0.5 + nodeSize}px`,
+                    height: `${item.progress * 0.5 + nodeSize}px`,
+                    left: `-${(item.progress * 0.5 + nodeSize - nodeSize) / 2}px`,
+                    top: `-${(item.progress * 0.5 + nodeSize - nodeSize) / 2}px`,
                   }}
                 ></div>
 
                 <div
                   className={`
-                  w-14 h-14 rounded-full flex items-center justify-center
+                  w-10 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center
                   ${
                     isExpanded
                       ? "bg-foreground text-background"
@@ -246,26 +253,26 @@ export default function RadialOrbitalTimeline({
                       : "border-foreground/40"
                   }
                   transition-all duration-300 transform
-                  ${isExpanded ? "scale-150" : ""}
+                  ${isExpanded ? "scale-125 md:scale-150" : ""}
                 `}
                 >
-                  <Icon size={20} />
+                  <Icon size={isMobile ? 16 : 20} />
                 </div>
 
                 <div
                   className={`
-                  absolute top-20 left-1/2 -translate-x-1/2 whitespace-nowrap
-                  text-sm font-semibold tracking-wider
+                  absolute top-14 md:top-20 left-1/2 -translate-x-1/2 whitespace-nowrap
+                  text-xs md:text-sm font-semibold tracking-wider
                   transition-all duration-300
-                  ${isExpanded ? "text-foreground scale-125" : "text-foreground/70"}
+                  ${isExpanded ? "text-foreground scale-110 md:scale-125" : "text-foreground/70"}
                 `}
                 >
                   {item.title}
                 </div>
 
                 {isExpanded && (
-                  <div className="absolute top-36 left-1/2 -translate-x-1/2 w-80">
-                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-px h-8 bg-foreground/50"></div>
+                  <div className="absolute top-24 md:top-36 left-1/2 -translate-x-1/2 w-72 md:w-80">
+                    <div className="absolute -top-6 md:-top-8 left-1/2 -translate-x-1/2 w-px h-6 md:h-8 bg-foreground/50"></div>
                     <Card
                       onMouseMove={handleMouseMove}
                       onMouseLeave={handleMouseLeave}
