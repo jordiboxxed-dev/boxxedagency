@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "description": "Boxxed Agency AI Infrastructure project.",
   "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
