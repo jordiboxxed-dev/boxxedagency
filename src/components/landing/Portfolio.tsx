@@ -4,7 +4,7 @@ import { TrendingUp } from "lucide-react";
 const portfolioItems = [
   {
     title: "BotBoxx - Agente IA",
-    link: "https://botboxx-demo-vip.vercel.app/",
+    link: "https://www.botboxxlanding.boxxed.agency",
     image: "/BOT BOXXED - 1.PNG",
   },
   {
