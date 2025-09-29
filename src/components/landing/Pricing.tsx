@@ -74,7 +74,7 @@ const Pricing = () => {
             Elegí el plan perfecto para tu etapa actual. Podés cambiar o cancelar cuando quieras.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-5xl mx-auto">
           {plans.map((plan) => (
             <Card
               key={plan.name}
@@ -103,8 +103,8 @@ const Pricing = () => {
                 <p className="text-sm text-muted-foreground mb-6 h-10">{plan.priceDescription}</p>
                 <ul className="space-y-3 text-left">
                   {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-3">
-                      <Check className="h-5 w-5 text-neon-green" />
+                    <li key={feature} className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-neon-green flex-shrink-0 mt-1" />
                       <span className="text-card-foreground">{feature}</span>
                     </li>
                   ))}
