@@ -75,11 +75,11 @@ const FeaturedCaseStudy = () => {
           </div>
 
           {/* Columna de imagen */}
-          <div className="relative h-full min-h-[400px]">
+          <div className="relative h-full min-h-[400px] bg-card/50 rounded-lg flex items-center justify-center p-4">
             <img 
               src="/project-botboxx.png" 
               alt="Dashboard de resultados" 
-              className="rounded-lg shadow-2xl shadow-electric-blue/10 w-full h-full object-cover"
+              className="rounded-lg shadow-2xl shadow-electric-blue/10 max-w-full max-h-full object-contain"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.src = '/placeholder.svg';
