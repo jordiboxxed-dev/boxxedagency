@@ -77,7 +77,7 @@ const FeaturedCaseStudy = () => {
           {/* Columna de imagen */}
           <div className="relative h-full min-h-[400px]">
             <img 
-              src="/case-study-dashboard.png" 
+              src="/project-botboxx.png" 
               alt="Dashboard de resultados" 
               className="rounded-lg shadow-2xl shadow-electric-blue/10 w-full h-full object-cover"
               onError={(e) => {
