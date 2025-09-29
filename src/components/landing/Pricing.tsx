@@ -70,7 +70,7 @@ const Pricing = () => {
               crecimiento
             </span>
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-muted-foreground">
             Elegí el plan perfecto para tu etapa actual. Podés cambiar o cancelar cuando quieras.
           </p>
         </div>
@@ -79,7 +79,7 @@ const Pricing = () => {
             <Card
               key={plan.name}
               className={cn(
-                "bg-black/20 backdrop-blur-lg border border-white/10 flex flex-col h-full transition-all duration-300",
+                "bg-card backdrop-blur-lg border flex flex-col h-full transition-all duration-300",
                 plan.isMostPopular && "border-2 border-neon-purple shadow-glow-purple lg:scale-105"
               )}
             >
@@ -92,20 +92,20 @@ const Pricing = () => {
                     </div>
                   </div>
                 )}
-                <CardTitle className={cn("text-2xl font-bold pt-4", plan.isMostPopular ? "text-neon-purple" : "text-white")}>{plan.name}</CardTitle>
-                <CardDescription className="text-gray-400">{plan.description}</CardDescription>
+                <CardTitle className={cn("text-2xl font-bold pt-4", plan.isMostPopular ? "text-neon-purple" : "text-card-foreground")}>{plan.name}</CardTitle>
+                <CardDescription>{plan.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <div className="mb-6">
-                  <span className={cn("text-5xl font-bold", plan.isMostPopular ? "text-neon-purple" : "text-white")}>${plan.price}</span>
-                  <span className="text-gray-400">/mes</span>
+                  <span className={cn("text-5xl font-bold", plan.isMostPopular ? "text-neon-purple" : "text-card-foreground")}>${plan.price}</span>
+                  <span className="text-muted-foreground">/mes</span>
                 </div>
-                <p className="text-sm text-gray-400 mb-6 h-10">{plan.priceDescription}</p>
+                <p className="text-sm text-muted-foreground mb-6 h-10">{plan.priceDescription}</p>
                 <ul className="space-y-3 text-left">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3">
                       <Check className="h-5 w-5 text-neon-green" />
-                      <span className="text-gray-300">{feature}</span>
+                      <span className="text-card-foreground">{feature}</span>
                     </li>
                   ))}
                 </ul>

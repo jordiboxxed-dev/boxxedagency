@@ -30,7 +30,7 @@ const Portfolio = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Algunos de nuestros trabajos recientes</h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-muted-foreground">
             Explora cómo hemos ayudado a otras empresas a innovar con IA.
           </p>
         </div>
@@ -41,7 +41,7 @@ const Portfolio = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block aspect-square rounded-lg overflow-hidden relative border border-white/10 bg-black/20 transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple"
+              className="group block aspect-square rounded-lg overflow-hidden relative border bg-card transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple"
             >
               {item.image ? (
                 <img 
@@ -56,7 +56,7 @@ const Portfolio = () => {
               ) : (
                 <div className="w-full h-full flex flex-col justify-center items-center text-center p-4">
                   <TrendingUp className="h-10 w-10 text-neon-purple mb-4" />
-                  <h3 className="font-semibold text-white">{item.title}</h3>
+                  <h3 className="font-semibold">{item.title}</h3>
                 </div>
               )}
             </a>

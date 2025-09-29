@@ -45,7 +45,7 @@ const AIBranding = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               AI First Branding:
             </h2>
-            <p className="text-lg md:text-xl text-gray-300 mb-8">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8">
               Donde la velocidad, creatividad y tecnología se encuentran.
             </p>
           </div>

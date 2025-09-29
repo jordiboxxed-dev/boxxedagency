@@ -30,7 +30,7 @@ const Services = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Nuestras Soluciones de IA</h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-muted-foreground">
             Potenciamos tu empresa con tecnología de vanguardia, diseñada para generar un impacto real.
           </p>
         </div>
@@ -38,14 +38,14 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="bg-black/20 backdrop-blur-lg border border-white/10 rounded-lg p-6 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple"
+              className="bg-card backdrop-blur-lg border rounded-lg p-6 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple"
             >
               <CardHeader className="p-0 mb-4 flex justify-center items-center">
                 {service.icon}
               </CardHeader>
               <CardContent className="p-0">
-                <CardTitle className="text-xl font-semibold mb-2 text-white">{service.title}</CardTitle>
-                <p className="text-gray-400 text-sm">{service.description}</p>
+                <CardTitle className="text-xl font-semibold mb-2 text-card-foreground">{service.title}</CardTitle>
+                <p className="text-muted-foreground text-sm">{service.description}</p>
               </CardContent>
             </Card>
           ))}

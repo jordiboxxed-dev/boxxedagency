@@ -36,7 +36,7 @@ const CTASection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Hablemos de tu Proyecto</h2>
-          <p className="text-lg text-gray-400 mb-8">
+          <p className="text-lg text-muted-foreground mb-8">
             Completa el formulario para agendar tu auditoría de IA gratuita. Descubre cómo podemos transformar tu negocio.
           </p>
           <Form {...form}>
@@ -48,7 +48,7 @@ const CTASection = () => {
                   <FormItem>
                     <FormLabel>Nombre</FormLabel>
                     <FormControl>
-                      <Input placeholder="Tu nombre" {...field} className="bg-anthracite-gray border-gray-700 focus:border-neon-purple focus:ring-neon-purple" />
+                      <Input placeholder="Tu nombre" {...field} className="bg-muted focus:border-neon-purple focus:ring-neon-purple" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -61,7 +61,7 @@ const CTASection = () => {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input type="email" placeholder="tu@email.com" {...field} className="bg-anthracite-gray border-gray-700 focus:border-neon-purple focus:ring-neon-purple" />
+                      <Input type="email" placeholder="tu@email.com" {...field} className="bg-muted focus:border-neon-purple focus:ring-neon-purple" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -74,7 +74,7 @@ const CTASection = () => {
                   <FormItem>
                     <FormLabel>Mensaje</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Cuéntanos sobre tu proyecto..." {...field} className="bg-anthracite-gray border-gray-700 focus:border-neon-purple focus:ring-neon-purple" />
+                      <Textarea placeholder="Cuéntanos sobre tu proyecto..." {...field} className="bg-muted focus:border-neon-purple focus:ring-neon-purple" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

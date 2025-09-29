@@ -54,7 +54,7 @@ const FAQ = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Preguntas Frecuentes</h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-muted-foreground">
             Resolvemos tus dudas para que tomes la mejor decisión.
           </p>
         </div>
@@ -64,12 +64,12 @@ const FAQ = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-black/20 backdrop-blur-lg border border-white/10 rounded-lg px-6 transition-all duration-300 hover:border-neon-purple"
+                className="bg-card backdrop-blur-lg border rounded-lg px-6 transition-all duration-300 hover:border-neon-purple"
               >
                 <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-400 pt-2">
+                <AccordionContent className="text-muted-foreground pt-2">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

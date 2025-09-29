@@ -35,19 +35,19 @@ const FeaturedCaseStudy = () => {
               <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
                 De startup caótica a líder del mercado
               </h2>
-              <p className="text-lg text-gray-300">
+              <p className="text-lg text-muted-foreground">
                 Ayudamos a un e-commerce de productos naturales a superar el estancamiento. Facturaban $50K/mes, ahogados en procesos manuales y sin una estrategia de crecimiento clara. Nuestro equipo implementó un sistema de automatización integral que transformó su operación. En solo 6 meses, no solo optimizaron su tiempo, sino que dispararon su facturación a $220K/mes, estableciéndose como líderes en su nicho.
               </p>
               <div className="space-y-6 my-8">
                 <div className="bg-deep-black/30 border-l-4 border-red-500 p-4 rounded-r-lg">
                   <p className="font-bold text-red-400 text-sm uppercase">Antes</p>
                   <h3 className="font-semibold text-lg">Procesos manuales y desorganizados</h3>
-                  <p className="text-gray-400 text-sm">Sin seguimiento, contenido inconsistente, pérdida de leads.</p>
+                  <p className="text-muted-foreground text-sm">Sin seguimiento, contenido inconsistente, pérdida de leads.</p>
                 </div>
                 <div className="bg-deep-black/30 border-l-4 border-neon-green p-4 rounded-r-lg">
                   <p className="font-bold text-neon-green text-sm uppercase">Después</p>
                   <h3 className="font-semibold text-lg">Sistema automatizado completo</h3>
-                  <p className="text-gray-400 text-sm">CRM integrado, contenido optimizado, nurturing automático.</p>
+                  <p className="text-muted-foreground text-sm">CRM integrado, contenido optimizado, nurturing automático.</p>
                 </div>
               </div>
             </div>
@@ -55,11 +55,11 @@ const FeaturedCaseStudy = () => {
             <div className="flex-grow flex flex-col justify-center">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {stats.map((stat, index) => (
-                  <Card key={index} className="bg-black/20 backdrop-blur-lg border border-white/10 p-4 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple">
+                  <Card key={index} className="bg-card backdrop-blur-lg border p-4 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple">
                     <CardContent className="p-0 flex flex-col items-center justify-center h-full">
                       {stat.icon}
-                      <p className="text-2xl font-bold text-white mt-2">{stat.value}</p>
-                      <p className="text-xs text-gray-400 mt-1">{stat.label}</p>
+                      <p className="text-2xl font-bold text-foreground mt-2">{stat.value}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{stat.label}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -86,10 +86,10 @@ const FeaturedCaseStudy = () => {
               }}
             />
             <div className="absolute bottom-4 left-4">
-              <Card className="bg-black/20 backdrop-blur-lg border border-white/10 p-4 rounded-lg">
+              <Card className="bg-card/20 backdrop-blur-lg border p-4 rounded-lg">
                 <CardContent className="p-0 text-center">
-                  <p className="text-2xl font-bold text-white">6 meses</p>
-                  <p className="text-sm text-gray-300">de implementación</p>
+                  <p className="text-2xl font-bold">6 meses</p>
+                  <p className="text-sm text-muted-foreground">de implementación</p>
                 </CardContent>
               </Card>
             </div>

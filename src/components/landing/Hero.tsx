@@ -41,7 +41,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4 [text-shadow:0_0_10px_rgba(0,102,255,0.5)]">
           Transforma tu Negocio con <span className="text-neon-purple">Inteligencia Artificial</span>
         </h1>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 mb-8">
+        <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-8">
           En Boxxed Agency, creamos soluciones de IA a medida que impulsan la eficiencia, la innovación y el crecimiento exponencial.
         </p>
         <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
@@ -51,17 +51,17 @@ const Hero = () => {
           <div className="flex flex-col items-center gap-2">
             <BarChart className="h-10 w-10 text-neon-green" />
             <span className="text-4xl font-bold">+200%</span>
-            <span className="text-gray-400">ROI Promedio</span>
+            <span className="text-muted-foreground">ROI Promedio</span>
           </div>
           <div className="flex flex-col items-center gap-2">
             <Zap className="h-10 w-10 text-neon-green" />
             <span className="text-4xl font-bold">90%</span>
-            <span className="text-gray-400">Automatización de Procesos</span>
+            <span className="text-muted-foreground">Automatización de Procesos</span>
           </div>
           <div className="flex flex-col items-center gap-2">
             <Users className="h-10 w-10 text-neon-green" />
             <span className="text-4xl font-bold">+50</span>
-            <span className="text-gray-400">Clientes Satisfechos</span>
+            <span className="text-muted-foreground">Clientes Satisfechos</span>
           </div>
         </div>
       </div>
