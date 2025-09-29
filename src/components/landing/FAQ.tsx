@@ -41,11 +41,6 @@ const faqs = [
     answer:
       "Tendrás un gestor de proyecto dedicado y acceso a un canal de comunicación directo (como Slack o Teams) para resolver dudas en tiempo real. Además, ofrecemos soporte técnico continuo para garantizar que la solución funcione siempre a la perfección.",
   },
-  {
-    question: "¿Puedo cancelar cuando quiera?",
-    answer:
-      "Sí, ofrecemos planes flexibles. Dependiendo del acuerdo, puedes cancelar tu suscripción o proyecto con un preaviso. Creemos en construir relaciones a largo plazo basadas en resultados, no en contratos restrictivos.",
-  },
 ];
 
 const FAQ = () => {
