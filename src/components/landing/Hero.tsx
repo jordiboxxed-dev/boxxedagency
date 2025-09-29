@@ -44,7 +44,7 @@ const Hero = () => {
         <p className="max-w-3xl mx-auto text-md sm:text-lg md:text-xl text-muted-foreground mb-8">
           En Boxxed Agency, creamos soluciones de IA a medida que impulsan la eficiencia, la innovación y el crecimiento exponencial.
         </p>
-        <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
+        <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
           Agenda tu Consultoría Gratuita
         </Button>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">

@@ -18,7 +18,7 @@ const Header = () => {
         </nav>
         <div className="flex items-center gap-2 sm:gap-4">
           <a href="#contact" className="hidden sm:block">
-            <Button className="bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple">
+            <Button className="bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple">
               Agenda tu Consultoría
             </Button>
           </a>

@@ -67,7 +67,7 @@ const FeaturedCaseStudy = () => {
             </div>
 
             <div className="mt-auto pt-8">
-              <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple w-fit">
+              <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple w-fit">
                 Ver caso completo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

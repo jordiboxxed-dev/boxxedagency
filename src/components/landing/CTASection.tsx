@@ -80,7 +80,7 @@ const CTASection = () => {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple text-lg py-6">
+              <Button type="submit" className="w-full bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple text-lg py-6">
                 Solicitar Auditoría Gratuita
               </Button>
             </form>

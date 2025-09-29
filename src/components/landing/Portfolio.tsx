@@ -63,7 +63,7 @@ const Portfolio = () => {
           ))}
         </div>
         <div className="text-center mt-16">
-          <Button className="bg-neon-purple hover:brightness-110 text-white font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
+          <Button className="bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
             Ver portafolio completo
           </Button>
         </div>
