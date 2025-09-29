@@ -7,11 +7,13 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
+import { showError, showSuccess } from "@/utils/toast";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "El nombre debe tener al menos 2 caracteres." }),
   email: z.string().email({ message: "Por favor, introduce un email válido." }),
+  phone: z.string().min(6, { message: "Por favor, introduce un número de teléfono válido." }),
   message: z.string().min(10, { message: "El mensaje debe tener al menos 10 caracteres." }),
 });
 
@@ -21,14 +23,23 @@ const CTASection = () => {
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
       message: "",
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast.success("¡Mensaje enviado! Nos pondremos en contacto contigo pronto.");
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const { error } = await supabase.from('contacts').insert([
+      { name: values.name, email: values.email, phone: values.phone, message: values.message },
+    ]);
+
+    if (error) {
+      console.error('Error inserting data:', error);
+      showError("Hubo un error al enviar tu mensaje. Inténtalo de nuevo.");
+    } else {
+      showSuccess("¡Mensaje enviado! Nos pondremos en contacto contigo pronto.");
+      form.reset();
+    }
   }
 
   return (
@@ -62,6 +73,19 @@ const CTASection = () => {
                     <FormLabel>Email</FormLabel>
                     <FormControl>
                       <Input type="email" placeholder="tu@email.com" {...field} className="bg-muted focus:border-neon-purple focus:ring-neon-purple" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="phone"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Teléfono</FormLabel>
+                    <FormControl>
+                      <Input type="tel" placeholder="Tu número de teléfono" {...field} className="bg-muted focus:border-neon-purple focus:ring-neon-purple" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
