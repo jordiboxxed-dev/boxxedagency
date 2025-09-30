@@ -20,13 +20,13 @@ const About = () => {
             </div>
           </div>
           <div className="bg-card backdrop-blur-lg border p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4">Nuestro Enfoque Técnico</h3>
+            <h3 className="text-2xl font-bold mb-4">Por qué elegirnos</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> Metodologías Ágiles</li>
-              <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> Modelos de Lenguaje (LLMs)</li>
-              <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> Computer Vision</li>
-              <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> MLOps y Despliegue en la Nube</li>
-              <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> Arquitecturas Serverless</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> Estrategias ágiles que se adaptan a tu negocio</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> Inteligencia Artificial aplicada de forma práctica</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> Soluciones visuales y de análisis automatizado</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> Procesos optimizados y escalables en la nube</li>
+              <li className="flex items-center gap-2"><span className="text-neon-green">✓</span> Tecnología flexible que crece con tu empresa</li>
             </ul>
           </div>
         </div>
