@@ -38,21 +38,21 @@ const FeaturedCaseStudy = () => {
                   Caso de Estudio
                 </Badge>
                 <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
-                  De startup caótica a líder del mercado
+                  De caos operativo a claridad y resultados
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Ayudamos a un e-commerce de productos naturales a superar el estancamiento. Facturaban $50K/mes, ahogados en procesos manuales y sin una estrategia de crecimiento clara. Nuestro equipo implementó un sistema de automatización integral que transformó su operación. En solo 6 meses, no solo optimizaron su tiempo, sino que dispararon su facturación a $220K/mes, estableciéndose como líderes en su nicho.
+                  ClimaSoluciones, e-commerce y negocio físico de piscinas, climatización y calefacción, estaba frenado por procesos manuales, sin CRM ni seguimiento, perdiendo leads valiosos todos los días. En solo 6 meses, con la implementación de automatizaciones, CRM y un sistema de calificación de leads, pasaron de apagar incendios a tener una operación escalable y eficiente, consolidándose como referentes en su industria.
                 </p>
                 <div className="space-y-6 my-8">
                   <div className="bg-deep-black/30 border-l-4 border-red-500 p-4 rounded-r-lg">
                     <p className="font-bold text-red-400 text-sm uppercase">Antes</p>
-                    <h3 className="font-semibold text-lg">Procesos manuales y desorganizados</h3>
-                    <p className="text-muted-foreground text-sm">Sin seguimiento, contenido inconsistente, pérdida de leads.</p>
+                    <h3 className="font-semibold text-lg">Procesos manuales y desordenados</h3>
+                    <p className="text-muted-foreground text-sm">Sin CRM ni seguimiento de prospectos. Leads perdidos y respuestas lentas.</p>
                   </div>
                   <div className="bg-deep-black/30 border-l-4 border-neon-green p-4 rounded-r-lg">
                     <p className="font-bold text-neon-green text-sm uppercase">Después</p>
-                    <h3 className="font-semibold text-lg">Sistema automatizado completo</h3>
-                    <p className="text-muted-foreground text-sm">CRM integrado, contenido optimizado, nurturing automático.</p>
+                    <h3 className="font-semibold text-lg">CRM integrado y automatizaciones</h3>
+                    <p className="text-muted-foreground text-sm">Calificación y seguimiento de leads en tiempo real. Equipo enfocado en vender, no en tareas repetitivas. Crecimiento sostenido y liderazgo en el sector.</p>
                   </div>
                 </div>
               </div>
