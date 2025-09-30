@@ -13,8 +13,11 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent side="left">
         <nav className="grid gap-6 text-lg font-medium mt-8">
-          <a href="#" className="text-2xl font-bold mb-4">
-            Boxxed <span className="text-neon-purple">Agency</span>
+          <a href="#" className="flex items-center gap-2 text-2xl font-bold mb-4">
+            <img src="/logo.png" alt="Boxxed Agency Logo" className="h-8 w-8" />
+            <span>
+              Boxxed <span className="text-neon-purple">Agency</span>
+            </span>
           </a>
           <a href="#services" className="text-muted-foreground hover:text-foreground">Servicios</a>
           <a href="#featured-case-study" className="text-muted-foreground hover:text-foreground">Casos de Éxito</a>
