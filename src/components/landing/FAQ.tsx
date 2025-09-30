@@ -7,7 +7,7 @@ import {
 
 const faqs = [
   {
-    question: "¿Necesito saber usar herramientas como Make o Airtable?",
+    question: "¿Necesito tener conocimientos técnicos para trabajar con ustedes?",
     answer:
       "No, en absoluto. Nos encargamos de toda la complejidad técnica. Te entregamos una solución lista para usar, integrada en tus procesos, sin que necesites conocimientos de programación o herramientas de automatización.",
   },
@@ -17,9 +17,9 @@ const faqs = [
       "Depende de la complejidad del proyecto, pero muchos de nuestros clientes empiezan a ver un ROI tangible en las primeras 4-6 semanas. Nuestro enfoque ágil nos permite entregar valor de forma incremental desde el principio.",
   },
   {
-    question: "¿Puedo pedir tareas personalizadas fuera de los planes?",
+    question: "¿Qué tipo de Retorno de Inversión (ROI) puedo esperar?",
     answer:
-      "¡Por supuesto! Entendemos que cada negocio es único. Si tienes necesidades específicas que no se ajustan a nuestros planes, podemos crear una propuesta a medida para tu proyecto. La flexibilidad es clave en nuestro servicio.",
+      "Aunque varía según el proyecto, nuestros clientes suelen ver un ROI significativo en los primeros 3 a 6 meses. Nos enfocamos en soluciones que generan un impacto medible, ya sea a través del aumento de ventas, la reducción de costos operativos o la mejora de la eficiencia. En nuestra auditoría gratuita, podemos estimar el impacto potencial para tu caso específico.",
   },
   {
     question: "¿Qué diferencia hay entre ustedes y una agencia tradicional?",
