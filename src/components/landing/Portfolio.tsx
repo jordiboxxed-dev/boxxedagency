@@ -8,7 +8,7 @@ const portfolioItems = [
   },
   {
     title: "Cuánto Valgo",
-    link: "#",
+    link: "https://cuantovalgo.vercel.app/",
     image: "/project-cuanto-valgo.png",
   },
   {
