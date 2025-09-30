@@ -12,14 +12,13 @@ const About = () => {
               <div className="flex items-start gap-4">
                 <span className="text-3xl mt-1">📈</span>
                 <div>
-                  <p className="font-semibold text-lg">80% de nuestros clientes vuelven a trabajar con nosotros</p>
-                  <p className="text-sm text-muted-foreground">(le habla directo a la confianza y satisfacción).</p>
+                  <p className="font-semibold text-lg">80% de nuestros clientes vuelven a elegirnos</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <span className="text-3xl mt-1">🌍</span>
                 <div>
-                  <p className="font-semibold text-lg">Impacto en múltiples países e industrias</p>
+                  <p className="font-semibold text-lg">Impacto en múltiples industrias</p>
                 </div>
               </div>
             </div>
