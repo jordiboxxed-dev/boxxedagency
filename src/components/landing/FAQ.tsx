@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "¿Pueden trabajar con mi industria específica?",
     answer:
-      "Sí. Aunque tenemos experiencia en sectores como E-commerce, Fintech y Healthcare, nuestras soluciones de IA son agnósticas a la industria. La clave está en adaptar la tecnología a los procesos específicos de tu negocio, sea cual sea.",
+      "Sí. Aunque tenemos experiencia en sectores como E-commerce, bienes raices, turismo y gastronomia, nuestras soluciones de IA son agnósticas a la industria. La clave está en adaptar la tecnología a los procesos específicos de tu negocio, sea cual sea.",
   },
   {
     question: "¿Cómo funciona el soporte y la comunicación?",
