@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { TrendingUp } from "lucide-react";
 
 const portfolioItems = [
   {
@@ -54,9 +53,12 @@ const Portfolio = () => {
                   }}
                 />
               ) : (
-                <div className="w-full h-full flex flex-col justify-center items-center text-center p-4">
-                  <TrendingUp className="h-10 w-10 text-neon-purple mb-4" />
-                  <h3 className="font-semibold">{item.title}</h3>
+                <div className="w-full h-full flex flex-col justify-center items-center text-center p-4 relative overflow-hidden">
+                  <span className="absolute text-[12rem] font-bold text-muted-foreground/10 -translate-y-4 blur-sm select-none" aria-hidden="true">?</span>
+                  <div className="relative z-10">
+                    <h3 className="font-semibold text-xl">{item.title}</h3>
+                    <p className="font-bold text-neon-purple mt-1">¿tu proyecto?</p>
+                  </div>
                 </div>
               )}
             </a>
