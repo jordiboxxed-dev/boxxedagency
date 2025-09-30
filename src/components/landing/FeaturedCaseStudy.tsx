@@ -87,7 +87,7 @@ const FeaturedCaseStudy = () => {
               <div className="absolute bottom-4 left-4">
                 <Card className="bg-card/20 backdrop-blur-lg border p-4 rounded-lg">
                   <CardContent className="p-0 text-center">
-                    <p className="text-2xl font-bold">6 meses</p>
+                    <p className="text-2xl font-bold">2 semanas</p>
                     <p className="text-sm text-muted-foreground">de implementación</p>
                   </CardContent>
                 </Card>
