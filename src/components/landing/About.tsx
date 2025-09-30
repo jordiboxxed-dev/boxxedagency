@@ -8,14 +8,19 @@ const About = () => {
             <p className="text-lg text-muted-foreground mb-6">
               No solo construimos tecnología; construimos ventajas competitivas. Nuestro equipo combina una profunda experiencia técnica en IA con una mentalidad estratégica de negocio para entregar soluciones que no solo funcionan, sino que generan un valor medible.
             </p>
-            <div className="grid grid-cols-2 gap-6">
-              <div>
-                <p className="text-4xl font-bold text-neon-purple">10+</p>
-                <p className="text-muted-foreground">Años de Experiencia</p>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <span className="text-3xl mt-1">📈</span>
+                <div>
+                  <p className="font-semibold text-lg">80% de nuestros clientes vuelven a trabajar con nosotros</p>
+                  <p className="text-sm text-muted-foreground">(le habla directo a la confianza y satisfacción).</p>
+                </div>
               </div>
-              <div>
-                <p className="text-4xl font-bold text-neon-purple">100+</p>
-                <p className="text-muted-foreground">Proyectos Completados</p>
+              <div className="flex items-start gap-4">
+                <span className="text-3xl mt-1">🌍</span>
+                <div>
+                  <p className="font-semibold text-lg">Impacto en múltiples países e industrias</p>
+                </div>
               </div>
             </div>
           </div>
