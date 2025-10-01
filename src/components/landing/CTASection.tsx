@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { supabase } from "@/integrations/supabase/client";
 import { showError, showSuccess } from "@/utils/toast";
+import { useNavigate } from "react-router-dom";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "El nombre debe tener al menos 2 caracteres." }),
@@ -18,6 +19,7 @@ const formSchema = z.object({
 });
 
 const CTASection = () => {
+  const navigate = useNavigate();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -57,6 +59,7 @@ const CTASection = () => {
 
     showSuccess("¡Mensaje enviado! Nos pondremos en contacto contigo pronto.");
     form.reset();
+    navigate('/thank-you');
   }
 
   return (
