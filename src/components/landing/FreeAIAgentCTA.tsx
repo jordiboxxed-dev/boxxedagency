@@ -20,7 +20,7 @@ const FreeAIAgentCTA = () => {
               Sin experiencia. Sin costo. Lanza tu propio agente de inteligencia artificial en menos de 5 minutos y descubre el poder de la automatización.
             </p>
             <Button asChild size="lg" className="bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
-              <a href="https://botboxxlanding.boxxed.agency/" target="_blank" rel="noopener noreferrer">
+              <a href="https://botboxxapp.boxxed.agency/" target="_blank" rel="noopener noreferrer">
                 Probar Gratis Ahora
                 <Bot className="ml-2 h-5 w-5" />
               </a>

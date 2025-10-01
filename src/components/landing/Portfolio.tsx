@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 const portfolioItems = [
   {
     title: "BotBoxx - Agente IA",
-    link: "https://botboxxlanding.boxxed.agency/",
+    link: "https://botboxxapp.boxxed.agency/",
     image: "/BOT BOXXED - 1.PNG",
   },
   {
