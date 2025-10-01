@@ -41,7 +41,7 @@ const FeaturedCaseStudy = () => {
                   De caos operativo a claridad y resultados
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  ClimaSoluciones, e-commerce y negocio físico de piscinas, climatización y calefacción, estaba frenado por procesos manuales, sin CRM ni seguimiento, perdiendo leads valiosos todos los días. En solo 6 meses, con la implementación de automatizaciones, CRM y un sistema de calificación de leads, pasaron de apagar incendios a tener una operación escalable y eficiente, consolidándose como referentes en su industria.
+                  ClimaSoluciones, e-commerce y negocio físico de piscinas, climatización y calefacción, estaba frenado por procesos manuales, sin CRM ni seguimiento, perdiendo leads valiosos todos los días. En solo 2 semanas, con la implementación de automatizaciones, CRM y un sistema de calificación de leads, pasaron de apagar incendios a tener una operación escalable y eficiente, consolidándose como referentes en su industria.
                 </p>
                 <div className="space-y-6 my-8">
                   <div className="bg-card border-l-4 border-red-500 p-4 rounded-r-lg">

@@ -39,7 +39,7 @@ const Hero = () => {
       </div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-4 [text-shadow:0_0_10px_rgba(0,102,255,0.5)]">
-          Transforma tu Negocio con <span className="text-neon-purple">Inteligencia Artificial</span>
+          Transforma tu Negocio con <span className="text-neon-purple">IA</span>
         </h1>
         <p className="max-w-3xl mx-auto text-md sm:text-lg md:text-xl text-muted-foreground mb-8">
           En Boxxed Agency, creamos soluciones de IA a medida que impulsan la eficiencia, la innovación y el crecimiento exponencial.
