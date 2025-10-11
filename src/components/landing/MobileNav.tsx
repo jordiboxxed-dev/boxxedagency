@@ -14,7 +14,7 @@ const MobileNav = () => {
       <SheetContent side="left">
         <nav className="grid gap-6 text-lg font-medium mt-8">
           <a href="#" className="flex items-center gap-2 text-2xl font-bold mb-4">
-            <img src="/logo.png" alt="Boxxed Agency Logo" className="h-10 w-10" />
+            <img src="/logo.png" alt="Boxxed Agency Logo" className="h-10 w-auto" />
             <span>
               Boxxed <span className="text-brand-lime">Agency</span>
             </span>
