@@ -20,7 +20,7 @@ const MobileProcess = ({ timelineData }: MobileProcessProps) => {
         const Icon = item.icon;
         return (
           <div key={item.id} className="w-full relative max-w-sm mx-auto">
-            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-brand-lime to-yellow-400 transform scale-[0.80] rounded-full blur-3xl" />
+            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-brand-lime to-neon-green transform scale-[0.80] rounded-full blur-3xl" />
             <div className="relative shadow-xl bg-card border border-border/50 px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
               <div className="h-10 w-10 rounded-full border flex items-center justify-center mb-4 border-border bg-background">
                 <Icon className="h-5 w-5 text-foreground" />
