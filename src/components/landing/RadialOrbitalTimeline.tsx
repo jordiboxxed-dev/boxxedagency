@@ -184,7 +184,7 @@ export default function RadialOrbitalTimeline({
             transform: `translate(${centerOffset.x}px, ${centerOffset.y}px)`,
           }}
         >
-          <div className="absolute w-16 h-16 md:w-20 md:h-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-neon-purple to-purple-400 animate-pulse flex items-center justify-center z-10 transition-transform duration-300 hover:scale-110">
+          <div className="absolute w-16 h-16 md:w-20 md:h-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-brand-lime to-yellow-400 animate-pulse flex items-center justify-center z-10 transition-transform duration-300 hover:scale-110">
             <div className="absolute w-20 h-20 md:w-24 md:h-24 rounded-full border border-foreground/20 animate-ping opacity-70"></div>
             <div
               className="absolute w-24 h-24 md:w-28 md:h-28 rounded-full border border-foreground/10 animate-ping opacity-50"
@@ -282,7 +282,7 @@ export default function RadialOrbitalTimeline({
                         className="pointer-events-none absolute -inset-px rounded-lg transition-opacity duration-300"
                         style={{
                           opacity: spotlightOpacity,
-                          background: `radial-gradient(300px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(138, 43, 226, 0.15), transparent 80%)`,
+                          background: `radial-gradient(300px circle at ${mousePosition.x}px ${mousePosition.y}px, hsla(var(--brand-lime), 0.15), transparent 80%)`,
                         }}
                       />
                       <CardHeader className="pb-2">
@@ -315,7 +315,7 @@ export default function RadialOrbitalTimeline({
                           </div>
                           <div className="w-full h-1 bg-muted rounded-full overflow-hidden">
                             <div
-                              className="h-full bg-gradient-to-r from-neon-purple to-purple-400"
+                              className="h-full bg-gradient-to-r from-brand-lime to-yellow-400"
                               style={{ width: `${item.progress}%` }}
                             ></div>
                           </div>

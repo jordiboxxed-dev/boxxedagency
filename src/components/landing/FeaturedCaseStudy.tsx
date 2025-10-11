@@ -10,17 +10,17 @@ const FeaturedCaseStudy = () => {
 
   const stats = [
     {
-      icon: <TrendingUp className="h-8 w-8 text-neon-purple" />,
+      icon: <TrendingUp className="h-8 w-8 text-brand-lime" />,
       value: "+340%",
       label: "Crecimiento en ventas",
     },
     {
-      icon: <Users className="h-8 w-8 text-neon-purple" />,
+      icon: <Users className="h-8 w-8 text-brand-lime" />,
       value: "+280%",
       label: "Nuevos leads mensuales",
     },
     {
-      icon: <Zap className="h-8 w-8 text-neon-purple" />,
+      icon: <Zap className="h-8 w-8 text-brand-lime" />,
       value: "15hs/sem",
       label: "Tiempo ahorrado",
     },
@@ -34,7 +34,7 @@ const FeaturedCaseStudy = () => {
             {/* Columna de texto y estadísticas */}
             <div className="flex flex-col h-full">
               <div>
-                <Badge variant="secondary" className="bg-neon-purple/20 text-neon-purple border border-neon-purple/30 w-fit hover:bg-neon-purple/20">
+                <Badge variant="secondary" className="bg-brand-lime/20 text-brand-lime border border-brand-lime/30 w-fit hover:bg-brand-lime/20">
                   Caso de Estudio
                 </Badge>
                 <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
@@ -60,7 +60,7 @@ const FeaturedCaseStudy = () => {
               <div className="flex-grow flex flex-col justify-center mt-8">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {stats.map((stat, index) => (
-                    <Card key={index} className="bg-card backdrop-blur-lg border p-4 text-center transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple">
+                    <Card key={index} className="bg-card backdrop-blur-lg border p-4 text-center transition-all duration-300 hover:border-brand-lime hover:scale-105 hover:shadow-glow-lime">
                       <CardContent className="p-0 flex flex-col items-center justify-center h-full">
                         {stat.icon}
                         <p className="text-2xl font-bold text-foreground mt-2">{stat.value}</p>
@@ -77,7 +77,7 @@ const FeaturedCaseStudy = () => {
               <img 
                 src="/project-botboxx.png" 
                 alt="Dashboard de resultados" 
-                className="rounded-lg shadow-2xl shadow-electric-blue/10 max-w-full max-h-full object-contain cursor-pointer"
+                className="rounded-lg shadow-2xl shadow-brand-lime/10 max-w-full max-h-full object-contain cursor-pointer"
                 onClick={() => setIsImageExpanded(true)}
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
@@ -103,7 +103,7 @@ const FeaturedCaseStudy = () => {
           onClick={() => setIsImageExpanded(false)}
         >
           <button 
-            className="absolute top-4 right-4 text-white z-[101] hover:text-neon-purple transition-colors"
+            className="absolute top-4 right-4 text-white z-[101] hover:text-brand-lime transition-colors"
             onClick={() => setIsImageExpanded(false)}
           >
             <X className="h-10 w-10" />

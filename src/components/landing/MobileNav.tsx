@@ -16,7 +16,7 @@ const MobileNav = () => {
           <a href="#" className="flex items-center gap-2 text-2xl font-bold mb-4">
             <img src="/logo.png" alt="Boxxed Agency Logo" className="h-10 w-10" />
             <span>
-              Boxxed <span className="text-neon-purple">Agency</span>
+              Boxxed <span className="text-brand-lime">Agency</span>
             </span>
           </a>
           <a href="#services" className="text-muted-foreground hover:text-foreground">Servicios</a>

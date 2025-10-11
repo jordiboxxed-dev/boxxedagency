@@ -40,7 +40,7 @@ const Portfolio = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block aspect-square rounded-lg overflow-hidden relative border bg-card transition-all duration-300 hover:border-neon-purple hover:scale-105 hover:shadow-glow-purple"
+              className="group block aspect-square rounded-lg overflow-hidden relative border bg-card transition-all duration-300 hover:border-brand-lime hover:scale-105 hover:shadow-glow-lime"
             >
               {item.image ? (
                 <img 
@@ -57,7 +57,7 @@ const Portfolio = () => {
                   <span className="absolute text-[12rem] font-bold text-muted-foreground/10 -translate-y-4 blur-sm select-none" aria-hidden="true">?</span>
                   <div className="relative z-10">
                     <h3 className="font-semibold text-xl">{item.title}</h3>
-                    <p className="font-bold text-neon-purple mt-1">¿tu proyecto?</p>
+                    <p className="font-bold text-brand-lime mt-1">¿tu proyecto?</p>
                   </div>
                 </div>
               )}
@@ -65,7 +65,7 @@ const Portfolio = () => {
           ))}
         </div>
         <div className="text-center mt-16">
-          <Button className="bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
+          <Button className="bg-brand-lime hover:brightness-110 text-black font-bold transition-all duration-300 hover:shadow-glow-lime text-lg px-8 py-6">
             Ver portafolio completo
           </Button>
         </div>

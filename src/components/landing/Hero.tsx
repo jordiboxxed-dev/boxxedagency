@@ -29,23 +29,23 @@ const Hero = () => {
         className="pointer-events-none absolute inset-0 transition-opacity duration-300 z-20"
         style={{
           opacity: spotlightOpacity,
-          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(138, 43, 226, 0.15), transparent 80%)`,
+          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, hsla(var(--brand-lime), 0.15), transparent 80%)`,
         }}
       />
       <div className="absolute inset-0 bg-deep-black z-0">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-        <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-electric-blue/20 blur-[100px]"></div>
-        <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-neon-purple/20 blur-[100px]"></div>
+        <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-brand-lime/10 blur-[100px]"></div>
+        <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-brand-lime/10 blur-[100px]"></div>
       </div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-4 [text-shadow:0_0_10px_rgba(0,102,255,0.5)]">
-          Aumenta tus Ventas con <span className="text-neon-purple">IA</span>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-4 [text-shadow:0_0_10px_hsla(var(--brand-lime),0.5)]">
+          Aumenta tus Ventas con <span className="text-brand-lime">IA</span>
         </h1>
         <p className="max-w-3xl mx-auto text-md sm:text-lg md:text-xl text-muted-foreground mb-8">
           En Boxxed Agency, creamos soluciones de IA a medida que impulsan la eficiencia, la innovación y el crecimiento exponencial.
         </p>
         <a href="#contact">
-          <Button size="lg" className="bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple text-lg px-8 py-6">
+          <Button size="lg" className="bg-brand-lime hover:brightness-110 text-black font-bold transition-all duration-300 hover:shadow-glow-lime text-lg px-8 py-6">
             Agenda tu Consultoría Gratuita
           </Button>
         </a>

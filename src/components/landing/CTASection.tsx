@@ -79,7 +79,7 @@ const CTASection = () => {
                   <FormItem>
                     <FormLabel>Nombre</FormLabel>
                     <FormControl>
-                      <Input placeholder="Tu nombre" {...field} className="bg-muted focus:border-neon-purple focus:ring-neon-purple" />
+                      <Input placeholder="Tu nombre" {...field} className="bg-muted focus:border-brand-lime focus:ring-brand-lime" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -92,7 +92,7 @@ const CTASection = () => {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input type="email" placeholder="tu@email.com" {...field} className="bg-muted focus:border-neon-purple focus:ring-neon-purple" />
+                      <Input type="email" placeholder="tu@email.com" {...field} className="bg-muted focus:border-brand-lime focus:ring-brand-lime" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -105,7 +105,7 @@ const CTASection = () => {
                   <FormItem>
                     <FormLabel>Teléfono</FormLabel>
                     <FormControl>
-                      <Input type="tel" placeholder="Tu número de teléfono" {...field} className="bg-muted focus:border-neon-purple focus:ring-neon-purple" />
+                      <Input type="tel" placeholder="Tu número de teléfono" {...field} className="bg-muted focus:border-brand-lime focus:ring-brand-lime" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -118,13 +118,13 @@ const CTASection = () => {
                   <FormItem>
                     <FormLabel>Mensaje</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Cuéntanos sobre tu proyecto..." {...field} className="bg-muted focus:border-neon-purple focus:ring-neon-purple" />
+                      <Textarea placeholder="Cuéntanos sobre tu proyecto..." {...field} className="bg-muted focus:border-brand-lime focus:ring-brand-lime" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full bg-neon-purple hover:brightness-110 text-white hover:text-black font-bold transition-all duration-300 hover:shadow-glow-purple text-lg py-6">
+              <Button type="submit" className="w-full bg-brand-lime hover:brightness-110 text-black font-bold transition-all duration-300 hover:shadow-glow-lime text-lg py-6">
                 Solicitar Auditoría Gratuita
               </Button>
             </form>
