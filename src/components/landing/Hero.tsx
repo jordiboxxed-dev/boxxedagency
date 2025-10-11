@@ -29,13 +29,13 @@ const Hero = () => {
         className="pointer-events-none absolute inset-0 transition-opacity duration-300 z-20"
         style={{
           opacity: spotlightOpacity,
-          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, hsla(var(--brand-lime), 0.15), transparent 80%)`,
+          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, hsla(0, 0%, 100%, 0.1), transparent 80%)`,
         }}
       />
       <div className="absolute inset-0 bg-deep-black z-0">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-        <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-brand-lime/10 blur-[100px]"></div>
-        <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-brand-lime/10 blur-[100px]"></div>
+        <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-white/5 blur-[100px]"></div>
+        <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-white/5 blur-[100px]"></div>
       </div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-4 [text-shadow:0_0_10px_hsla(var(--brand-lime),0.5)]">
