@@ -64,11 +64,6 @@ const Portfolio = () => {
             </a>
           ))}
         </div>
-        <div className="text-center mt-16">
-          <Button className="bg-brand-lime hover:brightness-110 text-black font-bold transition-all duration-300 hover:shadow-glow-lime text-lg px-8 py-6">
-            Ver portafolio completo
-          </Button>
-        </div>
       </div>
     </section>
   );
