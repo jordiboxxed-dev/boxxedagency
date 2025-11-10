@@ -6,7 +6,6 @@ import FeaturedCaseStudy from "@/components/landing/FeaturedCaseStudy";
 import Portfolio from "@/components/landing/Portfolio";
 import OrbitalProcess from "@/components/landing/OrbitalProcess";
 import About from "@/components/landing/About";
-import FreeAIAgentCTA from "@/components/landing/FreeAIAgentCTA";
 import CTASection from "@/components/landing/CTASection";
 import FAQ from "@/components/landing/FAQ";
 import FinalCTA from "@/components/landing/FinalCTA";
@@ -24,7 +23,6 @@ const Index = () => {
         <Portfolio />
         <OrbitalProcess />
         <About />
-        <FreeAIAgentCTA />
         <CTASection />
         <FAQ />
         <FinalCTA />
