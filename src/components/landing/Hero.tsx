@@ -39,14 +39,14 @@ const Hero = () => {
       </div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-4 [text-shadow:0_0_10px_hsla(var(--brand-lime),0.5)]">
-          Aumenta tus Ventas con <span className="text-brand-lime">IA</span>
+          Aumenta tus <span className="text-brand-lime">ventas</span>, <br /> automatizar tu <span className="text-brand-lime">negocio</span>
         </h1>
         <p className="max-w-3xl mx-auto text-md sm:text-lg md:text-xl text-muted-foreground mb-8">
           En Boxxed Agency, creamos soluciones de IA a medida que impulsan la eficiencia, la innovación y el crecimiento exponencial.
         </p>
         <a href="#contact">
           <Button size="lg" className="bg-brand-lime hover:brightness-110 text-black font-bold transition-all duration-300 hover:shadow-glow-lime text-lg px-8 py-6">
-            Agenda tu Consultoría Gratuita
+            Solicitar Demo Gratuita
           </Button>
         </a>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">

@@ -22,7 +22,7 @@ const Header = () => {
         <div className="flex items-center gap-2 sm:gap-4">
           <a href="#contact" className="hidden sm:block">
             <Button className="bg-brand-lime hover:brightness-110 text-black font-bold transition-all duration-300 hover:shadow-glow-lime">
-              Agenda tu Consultoría
+              Solicitar Demo Gratuita
             </Button>
           </a>
           <ThemeToggle />

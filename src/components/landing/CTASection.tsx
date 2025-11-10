@@ -66,9 +66,9 @@ const CTASection = () => {
     <section id="contact" className="py-16 md:py-24 scroll-mt-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Hablemos de tu Proyecto</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Solicita tu Demo Gratuita</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Completa el formulario para agendar tu auditoría de IA gratuita. Descubre cómo podemos transformar tu negocio.
+            Completa el formulario para agendar tu demo gratuita. Descubre cómo podemos transformar tu negocio.
           </p>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 text-left">
@@ -125,7 +125,7 @@ const CTASection = () => {
                 )}
               />
               <Button type="submit" className="w-full bg-brand-lime hover:brightness-110 text-black font-bold transition-all duration-300 hover:shadow-glow-lime text-lg py-6">
-                Solicitar Auditoría Gratuita
+                Solicitar Demo Gratuita
               </Button>
             </form>
           </Form>
